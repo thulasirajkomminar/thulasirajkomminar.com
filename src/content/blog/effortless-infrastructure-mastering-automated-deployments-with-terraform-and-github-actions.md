@@ -22,7 +22,7 @@ description: ""
 
 # Introduction
 
-In the earlier [blog post](https://thulasirajkomminar.com/efficient-continuous-deployment-with-github-environments-and-aws-codebuild), I showcased the steps to achieve continuous deployment using GitHub Actions and AWS CodeBuild specifically for code deployment. Expanding on those principles, let’s delve into the next phase of our workflow — incorporating infrastructure deployment through Terraform.
+In the earlier [blog post](https://www.thulasirajkomminar.com/posts/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/), I showcased the steps to achieve continuous deployment using GitHub Actions and AWS CodeBuild specifically for code deployment. Expanding on those principles, let’s delve into the next phase of our workflow — incorporating infrastructure deployment through Terraform.
 
 ![](../../assets/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/1.webp)
 
@@ -273,4 +273,4 @@ After a thorough review of the pull request and ensuring the Terraform plan resu
 
 # Wrapping it up
 
-In conclusion, we’ve explored the powerful capabilities of GitHub Actions in automating Terraform infrastructure deployments. If you’ve already followed my [previous blog](https://thulasirajkomminar.com/efficient-continuous-deployment-with-github-environments-and-aws-codebuild) on code deployment using GitHub Actions, you can seamlessly combine these processes to achieve sequential infrastructure deployment and code deployment, streamlining your development workflow.
+In conclusion, we’ve explored the powerful capabilities of GitHub Actions in automating Terraform infrastructure deployments. If you’ve already followed my [previous blog](https://www.thulasirajkomminar.com/posts/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/) on code deployment using GitHub Actions, you can seamlessly combine these processes to achieve sequential infrastructure deployment and code deployment, streamlining your development workflow.
