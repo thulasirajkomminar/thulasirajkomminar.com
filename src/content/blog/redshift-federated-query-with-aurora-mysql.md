@@ -31,7 +31,7 @@ Redshift federated query lets you query and analyse data across multiple operati
 I have explained how to setup AWS resources in the below steps.
 
 > ### Prerequisites
-
+>
 > VPC Peering should be enabled between the accounts.
 >
 > Amazon Redshift cluster should have a cluster maintenance version that supports federated queries.
