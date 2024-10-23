@@ -1,4 +1,5 @@
 import type { Site, SocialObjects } from "./types";
+import type { GiscusProps } from "@giscus/react";
 
 export const SITE: Site = {
   website: "https://thulasirajkomminar.com/",
@@ -70,3 +71,16 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
 ];
+
+export const GISCUS: GiscusProps = {
+  repo: "thulasirajkomminar/Discussions",
+  repoId: "R_kgDONEuWyw",
+  category: "Q&A",
+  categoryId: "DIC_kwDONEuWy84Cjn5E",
+  mapping: "pathname",
+  reactionsEnabled: "0",
+  emitMetadata: "0",
+  inputPosition: "top",
+  lang: "en",
+  loading: "lazy",
+};
