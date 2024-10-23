@@ -65,7 +65,7 @@ You can use built-in workflows that allow users across the organization to reque
 # Setting up DataZone
 
 > ### Prerequisites
-
+>
 > Set up Redshift Serverless clusters in both the Producer and Consumer accounts. This is essential for enabling database sharing across accounts.
 
 Now that we’ve explored the fundamentals of data governance and the key concepts of DataZone, let’s move forward with the setup process.
@@ -183,11 +183,11 @@ Repeat the above steps in the Consumer account to mirror the setup.
 # Publishing & Cataloging data product
 
 > ### Prerequisites
-
+>
 > For this tutorial create two datasets in the Producer account.
-
+>
 > **Claims:** Create a dataset in S3 that contains information on insurance claims filed. Additionally, use the Glue Data Catalog to catalog this data.
-
+>
 > **Customer:** Create a dataset in Redshift that includes personal information and relevant details about customers.
 
 With the projects and environments now created, we can proceed to import existing data, catalog it, and ultimately publish it and then will make the data easy to understand with business glossary and business name generation.

@@ -3,9 +3,14 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
+### Hi there 👋, I'm Thulasiraj
+
 ![](../assets/icons/about-icon.png)
 
-Helping HEINEKEN in becoming the best Connected Brewer by elevating standards in sustainability and responsibility, while unleashing the untapped potential of its workforce.
+## About me
+
+- 🧑‍💻 **Data Platform Engineer** at [Schuberg Philis](https://schubergphilis.com/en)
+- 💻 **Occasionally building Terraform & Pulumi providers** at [Komminar Labs](https://github.com/komminarlabs)
 
 ## Experience
 
