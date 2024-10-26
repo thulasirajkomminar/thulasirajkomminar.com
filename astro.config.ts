@@ -48,4 +48,8 @@ export default defineConfig({
       enabled: true,
     },
   }),
+  redirects: {
+    "/deploying-and-managing-influxdb-resources-with-terraform-8f1c3c5be8ff":
+      "/posts/deploying-and-managing-influxdb-resources-with-terraform",
+  },
 });
