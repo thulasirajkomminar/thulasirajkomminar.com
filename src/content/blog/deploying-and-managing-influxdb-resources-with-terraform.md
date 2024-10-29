@@ -22,7 +22,7 @@ tags:
 description: ""
 ---
 
-# Introduction:
+# Introduction
 
 - Terraform is a powerful infrastructure as code tool that automates cloud infrastructure provisioning and management through simple configuration files. If you’re interested in learning more, I’ve written a short blog outlining some key components of Terraform.
 
@@ -32,13 +32,13 @@ description: ""
 
 # Table of contents
 
-> ### Prerequisites:
+> ### Prerequisites
 >
 > To install Terraform, you can easily follow the steps outlined in this blog post: [Install Terraform](https://developer.hashicorp.com/terraform/install).
 >
 > Before diving in, ensure you have a basic understanding of InfluxDB and its components. For installation guidance, refer to this resource: [Install InfluxDB](https://docs.influxdata.com/influxdb/v2/install/).
 
-# Provider Configuration:
+# Provider Configuration
 
 To create and manage InfluxDB resources using Terraform, it utilizes specialized plugins known as providers to interface with InfluxDB. I’ve developed and published a provider for InfluxDB on the [Terraform registry](https://registry.terraform.io/providers/komminarlabs/influxdb/latest), enabling seamless resource creation and management.
 
@@ -71,7 +71,7 @@ provider "influxdb" {
 }
 ```
 
-# Creating and Managing InfluxDB Resources:
+# Creating and Managing InfluxDB Resources
 
 The [`komminarlabs/influxdb`](https://registry.terraform.io/providers/komminarlabs/influxdb/latest/docs) provider offers various data sources and resources.
 
@@ -96,7 +96,7 @@ We’ll begin by creating resources and then utilize data sources to query the c
 
 Resources are the most important element in the Terraform language. Each resource block describes one or more infrastructure objects.
 
-- ### Organization:
+### Organization
 
 An InfluxDB organization is a workspace for a group of users. All dashboards, tasks, buckets, members, etc., belong to an organization. Add the following code to create our organisation.
 
@@ -113,7 +113,7 @@ After running a Terraform plan and verifying everything looks good, let’s proc
 
 ![](../../assets/images/deploying-and-managing-influxdb-resources-with-terraform/3.webp)
 
-- ### Bucket:
+### Bucket
 
 An InfluxDB bucket is a named location where time series data is stored. All buckets have a retention period, a duration of time that each data point persists. InfluxDB drops all points with timestamps older than the bucket’s retention period. A bucket belongs to an organization.
 
@@ -132,7 +132,7 @@ resource "influxdb_bucket" "signals" {
 
 ![](../../assets/images/deploying-and-managing-influxdb-resources-with-terraform/5.webp)
 
-- ### Authorization:
+### Authorization
 
 Authorizations are InfluxDB Read/Write API tokens that grants read access, write access, or both to specific buckets in an organization.
 
@@ -192,7 +192,7 @@ output "signals_bucket" {
 
 ![](../../assets/images/deploying-and-managing-influxdb-resources-with-terraform/8.webp)
 
-# Additional Resources:
+# Additional Resources
 
 - [https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/install)
 - [https://docs.influxdata.com/influxdb/v2/install/](https://docs.influxdata.com/influxdb/v2/install/)
@@ -201,6 +201,6 @@ output "signals_bucket" {
 - [https://github.com/komminarlabs/terraform-provider-influxdb/tree/main/examples](https://github.com/komminarlabs/terraform-provider-influxdb/tree/main/examples)
 - [https://thulasirajkomminar.com/what-is-hashicorp-terraform](https://thulasirajkomminar.com/what-is-hashicorp-terraform)
 
-# Conclusion:
+# Conclusion
 
 Now that we’ve explored how to leverage Terraform for creating and managing InfluxDB resources, it’s time to start utilizing it. If you encounter any bugs or issues while using the provider, be sure to [report](https://github.com/komminarlabs/terraform-provider-influxdb/issues) them promptly.

@@ -98,15 +98,15 @@ HCL(HashiCorp Configuration Language) is a declarative and domain-specific langu
 - Providers enable Terraform to work with virtually any platform or service with an accessible API.
 - The core Terraform workflow consists of three stages:
 
-## Write:
+## Write
 
 Defining resources
 
-## Plan:
+## Plan
 
 An execution plan that describes the infra terraform will create/update/destroy based on existing infra and your configurations.
 
-## Apply:
+## Apply
 
 Performing the operations in the correct order by respecting resource dependencies. Can be automatic or manual.
 

@@ -88,7 +88,7 @@ Navigate to the TargetAccount and the destination region in Redshift. Under snap
 
 In this guide, we’ve covered the essential steps to migrate Amazon Redshift to a new account and region smoothly. By following these steps carefully, you can ensure minimal downtime and maintain data integrity throughout the migration process. I hope this guide has provided clarity and confidence for your Redshift migration journey!
 
-# References:
+# References
 
 - [https://docs.aws.amazon.com/redshift/latest/mgmt/managing-snapshots-console.html#snapshot-create](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-snapshots-console.html#snapshot-create)
 - [https://docs.aws.amazon.com/redshift/latest/mgmt/managing-snapshots-console.html#snapshot-share](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-snapshots-console.html#snapshot-share)

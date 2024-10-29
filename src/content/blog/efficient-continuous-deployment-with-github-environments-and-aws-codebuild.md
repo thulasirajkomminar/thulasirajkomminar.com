@@ -18,7 +18,7 @@ tags:
 description: ""
 ---
 
-# Introduction:
+# Introduction
 
 Continuous Deployment (CD) is a methodology that leverages automation for releasing software updates efficiently. In a standard CD setup, code undergoes automatic building and testing phases prior to its deployment. With GitHub Actions, automating these software workflows becomes seamless. Configure your CD pipeline to initiate whenever there’s a GitHub event, such as a new code push or a pull request. For a comprehensive list of event triggers, [click here](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows).
 
@@ -32,7 +32,7 @@ In this blog post, I’ll guide you through setting up a Continuous Deployment p
 
 ## GitHub
 
-### Environments:
+### Environments
 
 First, we’ll establish the `development` and `production` environments and implement deployment protection rules for added security.
 
@@ -54,7 +54,7 @@ To deploy to an AWS account, we require the AWS account ID and region. Therefore
 
 Likewise, I’ve configured deployment restrictions, environment secrets, and variables for the development environment. However, I omitted the reviewer setup since this environment is solely for development deployments.
 
-### Actions:
+### Actions
 
 Now, let’s proceed to create GitHub workflows so that deployments are automatically triggered whenever a commit is made to either the `develop` or `main` branch.
 
@@ -152,7 +152,7 @@ Now, let’s explore what needs to be configured on the AWS side.
 
 We need to set up two roles: one for GitHub Actions to assume using OIDC, and another for the CodeBuild project to assume.
 
-### OIDC:
+### OIDC
 
 To begin, log in to the AWS console and navigate to the IAM service. In the sidebar, select _Identity providers_ and click on _Add Provider_. In the _Configure provider_ window, choose the _OpenID Connect_ option.
 
@@ -164,9 +164,9 @@ Here are the specific details you’ll need to fill in:
 
 More details on this can be found [here](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services).
 
-### Create IAM Roles:
+### Create IAM Roles
 
-1. #### GitHub role:
+#### GitHub role
 
 Now, within the IAM services, select _Create role_. Opt for the _Custom trust policy_ as the trusted entity type.
 
@@ -230,7 +230,7 @@ Name the role as `GitHubTriggerRole`. After creating the role, attach the follow
 }
 ```
 
-2. #### CodeBuild Role:
+#### CodeBuild Role
 
 Next, let’s create a second role for CodeBuild to assume. When you click the _Create role_ button, select _CodeBuild_ as the AWS Service. Attach the existing managed policy `AWSCodeBuildAdminAccess` to this role.
 

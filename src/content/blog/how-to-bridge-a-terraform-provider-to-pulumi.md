@@ -24,7 +24,7 @@ In this blog post, we’ll delve into the process of creating a Pulumi Resource 
 
 # Table of contents
 
-> ### Prerequisites:
+> ### Prerequisites
 >
 > Before delving further, it’s essential to possess a foundational understanding of [Terraform providers](https://developer.hashicorp.com/terraform/language/providers), [Pulumi resource providers](https://www.pulumi.com/docs/iac/concepts/resources/providers/), and [InfluxDB](https://www.influxdata.com/).
 >
@@ -178,7 +178,7 @@ require (
 )
 ```
 
-## Build the Provider:
+## Build the Provider
 
 ### Build Generator
 
@@ -239,7 +239,7 @@ make build_sdks
 make lint_provider
 ```
 
-# Write documentation:
+# Write documentation
 
 Incorporate a `docs/` directory containing template pages that correspond to the different tabs typically found on a package page within the Pulumi Registry.
 
@@ -265,7 +265,7 @@ layout: package
 ---
 ```
 
-# Publish your package:
+# Publish your package
 
 After authoring and thoroughly testing your package locally, the next step is to publish it to make it accessible to the Pulumi community. This process involves publishing several artifacts:
 
@@ -418,7 +418,7 @@ jobs:
           echo "done publishing packages"
 ```
 
-# Publish the documentation:
+# Publish the documentation
 
 To publish your package on the Pulumi Registry, all package documentation is managed through the [pulumi/registry](https://github.com/pulumi/registry) repository on GitHub. Here’s how to proceed:
 
@@ -435,7 +435,7 @@ To publish your package on the Pulumi Registry, all package documentation is man
 - After making the necessary changes to add your package to the community package list, open a pull request with the modifications. Subsequently, await review from a member of the Pulumi team.
 - Upon review, a Pulumi employee will collaborate with you to finalize the steps required for publishing your Pulumi Package.
 
-# Using the provider:
+# Using the provider
 
 Now that we have successfully built and published our Pulumi provider, let’s proceed to utilize it for resource creation. In this instance, we’ll opt for Python as our preferred programming language.
 
@@ -500,7 +500,7 @@ You can also view the stacks in Pulumi cloud.
 
 ![](../../assets/images/how-to-bridge-a-terraform-provider-to-pulumi/4.webp)
 
-# Additional Resources:
+# Additional Resources
 
 - [https://www.pulumi.com/registry/packages/influxdb/](https://www.pulumi.com/registry/packages/influxdb/)
 - [https://github.com/komminarlabs/pulumi-influxdb](https://github.com/komminarlabs/pulumi-influxdb)
