@@ -28,7 +28,7 @@ In the earlier [blog post](https://www.thulasirajkomminar.com/posts/efficient-co
 
 # Table of contents
 
-# Setup Terraform Cloud Workspace:
+# Setup Terraform Cloud Workspace
 
 The GitHub Action you’re about to set up will seamlessly integrate with Terraform Cloud, allowing you to efficiently plan and apply your configurations. Before configuring the Actions workflow, ensure you’ve taken the necessary steps: creating a workspace, incorporating your AWS credentials into your Terraform Cloud workspace, and generating a Terraform Cloud user API token.
 
@@ -56,7 +56,7 @@ Now, let’s generate an API token to enable authentication for the Actions work
 
 ![](../../assets/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/5.webp)
 
-# Set up a GitHub repository:
+# Set up a GitHub repository
 
 Establish a GitHub repository dedicated to housing your infrastructure configuration code and the associated GitHub Actions workflow.
 

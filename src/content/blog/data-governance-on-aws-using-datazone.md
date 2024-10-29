@@ -44,21 +44,21 @@ A data catalog is a comprehensive, indexed inventory of an organization’s data
 
 DataZone is a data management service that makes it faster and easier for customers to catalog, discover, share, and govern data stored across AWS accounts. With DataZone, administrators and data stewards who oversee an organization’s data assets can manage and govern access to data using fine-grained controls. These controls are designed to ensure access with the right level of privileges and context. DataZone makes it easier for engineers, data scientists, product managers, analysts, and business users to access data throughout an organization so that they can discover, use, and collaborate to derive data-driven insights.
 
-## Key concepts and Capabilities:
+## Key concepts and Capabilities
 
-- ### Data Portal:
+### Data Portal
 
 This is a web application where different users can go to catalog, discover, govern, share, and analyze data in a self-service fashion.
 
-- ### Business Data Catalog
+### Business Data Catalog
 
 In your catalog, you can define the taxonomy or the business glossary. You can use this component to catalog data across your organization with business context and thus enable everyone in your organization to ﬁnd and understand data quickly.
 
-- ### Data Projects & Environments
+### Data Projects & Environments
 
 You can use projects to simplify access to the AWS analytics by creating business use case–based groupings of people, data assets, and analytics tools. DataZone projects provide a space where project members can collaborate, exchange data, and share data assets. Within projects, you can create environments that provide the necessary infrastructure to project members such as analytics tools and storage so that project members can easily produce new data or consume data they have access to.
 
-- ### Governance and Access Control
+### Governance and Access Control
 
 You can use built-in workflows that allow users across the organization to request access to data in the catalog and owners of the data to review and approve those subscription requests. Once a subscription request is approved, DataZone can automatically grant access by managing permission at underlying data stores such as Lake Formation and Redshift.
 
@@ -84,7 +84,7 @@ In an organization, a central Data Team is typically responsible for setting up 
 
 To begin setting up a Data Marketplace, the first step is to create a domain.
 
-## Create DataZone Domain:
+## Create DataZone Domain
 
 - Login to the AWS Console as an administrator user, then navigate to Amazon DataZone.
 - Click on the Create domain button.
@@ -104,7 +104,7 @@ To begin setting up a Data Marketplace, the first step is to create a domain.
 
 - Click on Create domain. Once the domain is created click Open data portal.
 
-## Associate Producer and Consumer accounts:
+## Associate Producer and Consumer accounts
 
 Associating your AWS accounts with DataZone domains enables you to publish data from these AWS accounts into the DataZone catalog and create DataZone projects to work with your data across multiple AWS accounts. Now the Data Portal is ready lets associate the producer and the consumer accounts.
 
@@ -113,7 +113,7 @@ Associating your AWS accounts with DataZone domains enables you to publish data 
 
 ![](../../assets/images/data-governance-on-aws-using-datazone/5.webp)
 
-## Create Projects:
+## Create Projects
 
 Projects enable a group of users to collaborate on various business use cases that involve publishing, discovering, subscribing to, and consuming data assets in the Amazon DataZone catalog. We will create projects for producer and consumer.
 
@@ -123,13 +123,13 @@ Projects enable a group of users to collaborate on various business use cases th
 
 With the projects set up and the Producer and Consumer accounts linked, the next step is to enable blueprints in both the Producer and Consumer accounts. Once this is done, we’ll return to the DataZone account to create environments, establish a business catalog, and then publish and subscribe to data assets.
 
-## Create Environments:
+## Create Environments
 
 In DataZone projects, environments are defined as collections of configured resources — such as S3 buckets, Glue databases, or Athena workgroups — each associated with a specific set of IAM principals (user roles) who are granted owner or contributor permissions to manage those resources.
 
 In our setup, we will create two environments: one for Athena (linked with S3) and another for Redshift.
 
-### Athena Environment:
+### Athena Environment
 
 - Log in to the Data Portal, select the Producer project, and then navigate to the Environments tab. Click on Create Environment to proceed.
 
@@ -140,7 +140,7 @@ In our setup, we will create two environments: one for Athena (linked with S3) a
 
 ![](../../assets/images/data-governance-on-aws-using-datazone/8.webp)
 
-### Redshift Environment:
+### Redshift Environment
 
 - Navigate to the Environments tab and click Create Environment Profile. Enter a name for the profile and select Default Data Warehouse as the blueprint.
 
@@ -156,13 +156,13 @@ In our setup, we will create two environments: one for Athena (linked with S3) a
 
 ## Producer and Consumer Account
 
-### Enable Blueprints:
+### Enable Blueprints
 
 A blueprint with which the environment is created defines what AWS tools and services (eg, Glue or Redshift) members of the project to which the environment belongs can use as they work with assets in the DataZone catalog.
 
 Go to DataZone service click View Associated Domain and under the Blueprints tab enable Default Data Lake and Default Data Warehouse blueprints.
 
-### Create Parameter Set for Redshift:
+### Create Parameter Set for Redshift
 
 Parameter set is a group of keys and values, required for DataZone to establish a connection to your Redshift cluster and is used to create data warehouse environments. These parameters include the name of your Redshift cluster, database, and the secrets manager that holds credentials to the cluster.
 
@@ -233,7 +233,7 @@ Data Consumer searches for data and discovers the data needed for the business u
 
 ## Claims data
 
-### Create subscription:
+### Create subscription
 
 - Use the search bar to locate the claims data and click Subscribe.
 
@@ -245,7 +245,7 @@ Data Consumer searches for data and discovers the data needed for the business u
 
 ![](../../assets/images/data-governance-on-aws-using-datazone/22.webp)
 
-### Analyze and Visualize data in Athena:
+### Analyze and Visualize data in Athena
 
 - Return to the Consumer project, where you should now see the subscribed asset listed.
 
@@ -259,13 +259,13 @@ Data Consumer searches for data and discovers the data needed for the business u
 
 ## Customer data
 
-### Create subscription:
+### Create subscription
 
 - Repeat the process to search for and subscribe to the customer data. Switch back to the Producer project to approve the request. Once approved, DataZone will add the asset to the existing environment.
 
 ![](../../assets/images/data-governance-on-aws-using-datazone/26.webp)
 
-### Analyze and Visualize data in Redshift:
+### Analyze and Visualize data in Redshift
 
 - Click Query Data to run queries on the Customer data in Redshift.
 
