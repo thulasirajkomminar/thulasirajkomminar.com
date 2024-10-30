@@ -4,7 +4,7 @@ pubDatetime: 2024-05-17T00:00:00Z
 modDatetime: 2024-05-17T00:00:00Z
 title: Enabling Cross-Account Access for AWS Lake Formation with Data Filters Using Terraform
 slug: enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform
-featured: true
+featured: false
 draft: false
 tags:
   - aws
