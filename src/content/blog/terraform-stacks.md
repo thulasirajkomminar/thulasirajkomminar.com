@@ -4,7 +4,7 @@ pubDatetime: 2024-10-30T17:00:00Z
 modDatetime: 2024-10-30T17:00:00Z
 title: Terraform Stacks
 slug: terraform-stacks
-ogImage: "https://www.thulasirajkomminar.com/_astro/1.bdqQohgD_21LluM.webp"
+ogImage: "https://asset.cloudinary.com/komminarlabs/e47876f3f601b8938e5cdf15540a1544"
 featured: true
 draft: false
 tags:
