@@ -4,8 +4,7 @@ pubDatetime: 2024-10-30T17:00:00Z
 modDatetime: 2024-10-30T17:00:00Z
 title: Terraform Stacks
 slug: terraform-stacks
-cover: "../../assets/images/terraform-stacks/1.png"
-coverAlt: "Example: The Kubernetes and namespace components are repeated across three regions using three deployments."
+ogImage: "../../assets/images/terraform-stacks/1.png"
 featured: true
 draft: false
 tags:
