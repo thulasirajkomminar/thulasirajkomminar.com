@@ -1,7 +1,7 @@
 ---
 author: Thulasiraj Komminar
-pubDatetime: 2024-10-30T16:00:00Z
-modDatetime: 2024-10-30T16:00:00Z
+pubDatetime: 2024-10-30T17:00:00Z
+modDatetime: 2024-10-30T17:00:00Z
 title: Terraform Stacks
 slug: terraform-stacks
 featured: true
