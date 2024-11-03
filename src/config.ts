@@ -29,15 +29,9 @@ export const LOGO_IMAGE = {
 
 export const SOCIALS: SocialObjects = [
   {
-    name: "Github",
+    name: "GitHub",
     href: "https://github.com/komminarlabs",
-    linkTitle: ` ${SITE.title} on Github`,
-    active: true,
-  },
-  {
-    name: "Github",
-    href: "https://github.com/thulasirajkomminar",
-    linkTitle: ` ${SITE.title} on Github`,
+    linkTitle: ` ${SITE.title} on GitHub (Organization)`,
     active: true,
   },
   {
@@ -50,6 +44,12 @@ export const SOCIALS: SocialObjects = [
     name: "X",
     href: "https://x.com/TKomminar",
     linkTitle: `${SITE.title} on X`,
+    active: true,
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/thulasirajkomminar",
+    linkTitle: ` ${SITE.title} on GitHub (Personal)`,
     active: true,
   },
   {
@@ -68,6 +68,12 @@ export const SOCIALS: SocialObjects = [
     name: "Mail",
     href: "mailto:thulasiraj@komminarlabs.com",
     linkTitle: `Send an email to ${SITE.title}`,
+    active: true,
+  },
+  {
+    name: "BuyMeACoffee",
+    href: "https://buymeacoffee.com/thulasirajkomminar",
+    linkTitle: `${SITE.title} on Buy Me A Coffee`,
     active: true,
   },
 ];
