@@ -31,7 +31,7 @@ export const SOCIALS: SocialObjects = [
   {
     name: "GitHub",
     href: "https://github.com/komminarlabs",
-    linkTitle: ` ${SITE.title} on GitHub (Organization)`,
+    linkTitle: `Komminar Labs on GitHub (Organization)`,
     active: true,
   },
   {
@@ -49,7 +49,7 @@ export const SOCIALS: SocialObjects = [
   {
     name: "GitHub",
     href: "https://github.com/thulasirajkomminar",
-    linkTitle: ` ${SITE.title} on GitHub (Personal)`,
+    linkTitle: `${SITE.title} on GitHub (Personal)`,
     active: true,
   },
   {
