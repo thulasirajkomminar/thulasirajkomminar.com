@@ -59,12 +59,6 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/komminarlabs/",
-    linkTitle: `${SITE.title} on Instagram`,
-    active: true,
-  },
-  {
     name: "TikTok",
     href: "https://www.tiktok.com/@thulasirajkomminar",
     linkTitle: `${SITE.title} on TikTok`,
