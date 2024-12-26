@@ -1,4 +1,4 @@
-**/public/
+public/
 **/.vscode/
 .vercel
 !**/parts/
