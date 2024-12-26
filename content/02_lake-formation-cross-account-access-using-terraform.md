@@ -2,6 +2,7 @@
 title = "Lake Formation cross-account access using Terraform"
 slug = "lake-formation-cross-account-access-using-terraform"
 date = 2022-09-15
+aliases = ["/lake-formation-cross-account-access-using-terraform-e21279e30531", "/posts/lake-formation-cross-account-access-using-terraform"]
 
 [taxonomies]
 categories = ["AWS", "Terraform", "Data Governance"]

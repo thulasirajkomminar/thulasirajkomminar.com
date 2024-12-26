@@ -2,6 +2,7 @@
 title = "Enabling Cross-Account Access for AWS Lake Formation with Data Filters Using Terraform"
 slug = "enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform"
 date = 2024-05-17
+aliases = ["/enabling-cross-account-access-for-lake-formation-with-data-filters-using-terraform-ed6e51528c3a", "/posts/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform"]
 
 [taxonomies]
 categories = ["AWS", "Terraform", "Data Governance"]

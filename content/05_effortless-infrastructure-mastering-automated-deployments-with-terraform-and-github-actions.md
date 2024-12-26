@@ -2,6 +2,7 @@
 title = "Effortless Infrastructure - Mastering Automated Deployments with Terraform and GitHub Actions"
 slug = "effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions"
 date = 2024-01-26
+aliases = ["/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions-c98d057f1a08", "/posts/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions", "/aws-tip/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions-c98d057f1a08"]
 
 [taxonomies]
 categories = ["AWS", "Terraform", "CICD"]

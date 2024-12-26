@@ -2,6 +2,7 @@
 title = "Efficient Continuous Deployment with GitHub Environments and AWS CodeBuild"
 slug = "efficient-continuous-deployment-with-github-environments-and-aws-codebuild"
 date = 2023-10-30
+aliases = ["/efficient-continuous-deployment-with-github-environments-and-aws-codebuild-9086aef7d913", "/posts/efficient-continuous-deployment-with-github-environments-and-aws-codebuild"]
 
 [taxonomies]
 categories = ["AWS", "CICD"]

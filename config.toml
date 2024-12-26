@@ -43,7 +43,7 @@ after_dark_title = "Thulasiraj Komminar | AWS • Terraform • Programming"
 
 after_dark_menu = [
   { name = "Home", url = "$BASE_URL" },
-  { name = "About", url = "$BASE_URL/about-me" },
+  { name = "About", url = "$BASE_URL/about/about-me" },
   { name = "Categories", url = "$BASE_URL/categories" },
   { name = "GitHub", url = "https://github.com/thulasirajkomminar" },
   { name = "LinkedIn", url = "https://www.linkedin.com/in/thulasirajkomminar/" },

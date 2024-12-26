@@ -2,6 +2,7 @@
 title = "Terraform Stacks"
 slug = "terraform-stacks"
 date = 2024-10-30
+aliases = ["/posts/terraform-stacks"]
 
 [taxonomies]
 categories = ["Terraform"]

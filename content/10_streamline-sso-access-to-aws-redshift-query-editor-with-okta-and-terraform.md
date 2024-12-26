@@ -2,6 +2,7 @@
 title = "Streamline SSO Access to AWS Redshift Query Editor with Okta and Terraform"
 slug = "streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform"
 date = 2024-05-18
+aliases = ["/streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform-3abbecf347c3", "/posts/streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform/"]
 
 [taxonomies]
 categories = ["AWS", "Terraform"]
