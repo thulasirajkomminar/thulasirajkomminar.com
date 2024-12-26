@@ -2,6 +2,7 @@
 title = "Deploying and Managing InfluxDB Resources with Terraform"
 slug = "deploying-and-managing-influxdb-resources-with-terraform"
 date = 2024-02-15
+aliases = ["/deploying-and-managing-influxdb-resources-with-terraform-8f1c3c5be8ff", "/posts/deploying-and-managing-influxdb-resources-with-terraform"]
 
 [taxonomies]
 categories = ["Terraform", "IIoT"]

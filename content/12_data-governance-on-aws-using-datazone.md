@@ -2,6 +2,7 @@
 title = "Data Governance on AWS using DataZone"
 slug = "data-governance-on-aws-using-datazone"
 date = 2024-08-09
+aliases = ["/towards-aws/data-governance-on-aws-using-datazone-ae88c5460c5d", "/posts/data-governance-on-aws-using-datazone"]
 
 [taxonomies]
 categories = ["AWS", "Data Governance"]

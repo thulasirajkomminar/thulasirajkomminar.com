@@ -2,6 +2,7 @@
 title = "What is HashiCorp Terraform?"
 slug = "what-is-hashicorp-terraform"
 date = 2023-09-22
+aliases = ["/what-is-hashicorp-terraform-42d419a61cb9", "posts/what-is-hashicorp-terraform"]
 
 [taxonomies]
 categories = ["Terraform"]
