@@ -116,9 +116,9 @@ removed {
 }
 ```
 
-> ### Provider lock file
->
-> A Stack cannot run without a lock file for its providers. After defining your providers, use the Terraform Stacks CLI to generate a `.terraform.lock.hcl` lock file. The tfstacks providers lock command(`tfstacks providers lock`) creates and updates your `.terraform.lock.hcl` file.
+### Provider lock file
+
+A Stack cannot run without a lock file for its providers. After defining your providers, use the Terraform Stacks CLI to generate a `.terraform.lock.hcl` lock file. The tfstacks providers lock command(`tfstacks providers lock`) creates and updates your `.terraform.lock.hcl` file.
 
 ## `deployment`
 
