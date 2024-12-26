@@ -244,6 +244,8 @@ Parameter set is a group of keys and values, required for DataZone to establish 
 - Select the secrets manager ARN that holds the credentials to the selected Redshift cluster or the Redshift Serverless workgroup. - - The AWS secret must be tagged with the AmazonDataZoneDomain : [Domain_ID] tag in order to be eligible for use within a parameter set.
 - Click Create parameter set.
 
+> **Note**
+> 
 > Make sure the Redshift Manage Access Role has permissions to read the secret.
 
 <center>
