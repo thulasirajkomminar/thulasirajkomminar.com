@@ -1,0 +1,52 @@
+# The URL the site will be built for
+base_url = "https://www.thulasirajkomminar.com"
+title = "Thulasiraj Komminar"
+description = "AWS • Terraform • Programming"
+default_language = "en"
+theme = "after-dark"
+generate_feeds = true
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+taxonomies = [
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "axar"
+codeblock = true
+
+# Enable MathJax support
+latex = false
+
+[search]
+index_format = "elasticlunr_json"
+include_title = true
+include_description = true
+include_content = true
+
+# Enable search bar 
+enable_search = true 
+
+[extra]
+paginate_by = 5
+author = "Thulasiraj Komminar"
+after_dark_title = "Thulasiraj Komminar | AWS • Terraform • Programming"
+
+after_dark_menu = [
+  { name = "Home", url = "$BASE_URL" },
+  { name = "About", url = "$BASE_URL/about-me" },
+  { name = "Categories", url = "$BASE_URL/categories" },
+  { name = "GitHub", url = "https://github.com/thulasirajkomminar" },
+  { name = "LinkedIn", url = "https://www.linkedin.com/in/thulasirajkomminar/" },
+  { name = "X", url = "https://x.com/TKomminar" },
+  #{ name = "RSS", url = "$BASE_URL/rss.xml" },
+]
