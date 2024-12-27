@@ -14,7 +14,7 @@ In my previous blog, we explored enabling cross-account data sharing using AWS L
 <!-- more -->
 
 <center>
-<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/1.webp" style="width: 100%"/>
+<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/1.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -55,7 +55,7 @@ Cell-level security combines both row and column filtering, providing a highly f
 Assuming you have already followed the Lake Formation setup in Source Account as detailed in my previous blog, we can now proceed with creating the data filter. Let’s use an example involving IIoT measurements. Suppose you have equipment spread across multiple sites and need to grant specific IAM roles access to particular sites and columns. Here’s how to achieve this using Terraform:
 
 <center>
-<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/2.webp" style="width: 70%"/>
+<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/2.webp" style="width: 80%"/>
 </center>
 <br>
 
@@ -74,7 +74,7 @@ This setup ensures that specific IAM roles have access only to the defined sites
 Now that we’ve created the data filter, let’s utilize it while sharing the catalog. In the code snippet below, we’ll share the database and table with the target account. Note that when sharing the table, we’ll include the data filter created in the previous step.
 
 <center>
-<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/3.webp" style="width: 70%"/>
+<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/3.webp" style="width: 90%"/>
 </center>
 <br>
 
@@ -106,7 +106,7 @@ By creating this resource link, you enable seamless access to the shared data ca
 Now that we’ve created the resource link, we can grant access to the resource link and the shared catalog. After this step, the IAM roles will have access to the filtered data shared from the source account.
 
 <center>
-<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/5.webp" style="width: 70%"/>
+<img src="/images/enabling-cross-account-access-for-aws-lake-formation-with-data-filters-using-terraform/5.webp" style="width: 90%"/>
 </center>
 <br>
 

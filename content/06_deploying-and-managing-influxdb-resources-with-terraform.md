@@ -120,12 +120,12 @@ resource "influxdb_organization" "iot" {
 After running a Terraform plan and verifying everything looks good, let’s proceed with applying the changes.
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/2.webp" style="width: 50%"/>
+<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/2.webp" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/3.webp" style="width: 50%"/>
+<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/3.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -145,12 +145,12 @@ resource "influxdb_bucket" "signals" {
 ```
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/4.webp" style="width: 50%"/>
+<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/4.webp" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/5.webp" style="width: 50%"/>
+<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/5.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -185,12 +185,12 @@ resource "influxdb_authorization" "signals_rw" {
 ```
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/6.webp" style="width: 50%"/>
+<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/6.webp" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/7.webp" style="width: 50%"/>
+<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/7.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -219,7 +219,7 @@ output "signals_bucket" {
 ```
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/8.webp" style="width: 50%"/>
+<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/8.webp" style="width: 90%"/>
 </center>
 <br>
 
