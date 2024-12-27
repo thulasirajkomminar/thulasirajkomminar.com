@@ -14,7 +14,7 @@ In this blog I will explain what is Terraform and some of its common terms. I wi
 <!-- more -->
 
 <center>
-<img src="/images/what-is-hashicorp-terraform/1.webp" style="width: 100%"/>
+<img src="/images/what-is-hashicorp-terraform/1.webp" style="width: 80%"/>
 </center>
 <br>
 

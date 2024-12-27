@@ -44,13 +44,13 @@ In this guide, we will discuss the consumption cross-account access, enable cros
 
 > **Prerequisites**
 >
-> This guide shows how to enable cross-account access for the accounts that are under the same organization.
+> - This guide shows how to enable cross-account access for the accounts that are under the same organization.
 >
-> Revoke all Lake Formation permissions from the IAMAllowedPrincipals group for the Data Catalog resource.
+> - Revoke all Lake Formation permissions from the IAMAllowedPrincipals group for the Data Catalog resource.
 >
-> If the cross-account access is for an external account under a different organization then some extra IAM permissions, catalog resource policy, and accepting the RAM share are required.
+> - If the cross-account access is for an external account under a different organization then some extra IAM permissions, catalog resource policy, and accepting the RAM share are required.
 >
-> Lakeformation cross-region catalog sharing is not supported yet because RAM is a regional service.
+> - Lakeformation cross-region catalog sharing is not supported yet because RAM is a regional service.
 
 # Lake Formation setup in Account-Source
 
