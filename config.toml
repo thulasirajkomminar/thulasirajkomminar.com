@@ -47,6 +47,6 @@ after_dark_menu = [
   { name = "Categories", url = "$BASE_URL/categories" },
   { name = "GitHub", url = "https://github.com/thulasirajkomminar" },
   { name = "LinkedIn", url = "https://www.linkedin.com/in/thulasirajkomminar/" },
-  { name = "X", url = "https://x.com/TKomminar" },
+  { name = "𝕏", url = "https://x.com/TKomminar" },
   #{ name = "RSS", url = "$BASE_URL/rss.xml" },
 ]
