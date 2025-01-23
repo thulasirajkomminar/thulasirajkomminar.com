@@ -42,11 +42,12 @@ InfluxDB is a specialized time-series database tailored for efficiently handling
 </details>
 <br>
 
-> **Prerequisites**
->
-> To install Terraform, you can easily follow the steps outlined in this blog post: [Install Terraform](https://developer.hashicorp.com/terraform/install).
->
-> Before diving in, ensure you have a basic understanding of InfluxDB and its components. For installation guidance, refer to this resource: [Install InfluxDB](https://docs.influxdata.com/influxdb/v2/install/).
+<q>**Prerequisites**
+<br><br>
+To install Terraform, you can easily follow the steps outlined in this blog post [Install Terraform](https://developer.hashicorp.com/terraform/install).
+<br><br>
+Before diving in, ensure you have a basic understanding of InfluxDB and its components. For installation guidance, refer to this resource [Install InfluxDB](https://docs.influxdata.com/influxdb/v2/install/).
+</q>
 
 # Provider Configuration
 

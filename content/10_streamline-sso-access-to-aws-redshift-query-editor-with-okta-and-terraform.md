@@ -37,14 +37,14 @@ In this blog post, we’ll focus on using [Okta](https://www.okta.com/) as the I
 </details>
 <br>
 
-> **Prerequisites**
->
-> Before you begin, ensure you have the following prerequisites in place:
->
-> **An Okta Account:** You need an active Okta account to serve as your identity provider.
->
-> **A Redshift Cluster:** Ensure you have an existing Amazon Redshift cluster set up.
-> Configured Query Editor v2: Make sure Redshift Query Editor v2 is configured. For more details, refer to [Configuring your AWS account](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-getting-started.html).
+<q>**Prerequisites**
+<br><br>
+Before you begin, ensure you have the following prerequisites in place:
+<br>
+<br>**An Okta Account:** You need an active Okta account to serve as your identity provider.
+<br>**A Redshift Cluster:** Ensure you have an existing Amazon Redshift cluster set up.
+<br>**Configured Query Editor v2:** Make sure Redshift Query Editor v2 is configured. For more details, refer to [Configuring your AWS account](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-getting-started.html).
+</q>
 
 # Create IAM Roles and Permissions
 
