@@ -98,9 +98,10 @@ You can use built-in workflows that allow users across the organization to reque
 
 # Setting up DataZone
 
-> **Prerequisites**
->
-> Set up Redshift Serverless clusters in both the Producer and Consumer accounts. This is essential for enabling database sharing across accounts.
+<q>**Prerequisites**
+<br><br>
+Set up Redshift Serverless clusters in both the Producer and Consumer accounts. This is essential for enabling database sharing across accounts.
+</q>
 
 Now that we’ve explored the fundamentals of data governance and the key concepts of DataZone, let’s move forward with the setup process.
 
@@ -244,9 +245,10 @@ Parameter set is a group of keys and values, required for DataZone to establish 
 - Select the secrets manager ARN that holds the credentials to the selected Redshift cluster or the Redshift Serverless workgroup. - - The AWS secret must be tagged with the AmazonDataZoneDomain : [Domain_ID] tag in order to be eligible for use within a parameter set.
 - Click Create parameter set.
 
-> **Note**
-> 
-> Make sure the Redshift Manage Access Role has permissions to read the secret.
+<q>**Note**
+<br>
+Make sure the Redshift Manage Access Role has permissions to read the secret.
+</q>
 
 <center>
 <img src="/images/data-governance-on-aws-using-datazone/13.webp" style="width: 70%"/>
@@ -257,13 +259,12 @@ Repeat the above steps in the Consumer account to mirror the setup.
 
 # Publishing and Cataloging data product
 
-> **Prerequisites**
->
-> For this tutorial create two datasets in the Producer account.
->
-> **Claims:** Create a dataset in S3 that contains information on insurance claims filed. Additionally, use the Glue Data Catalog to catalog this data.
->
-> **Customer:** Create a dataset in Redshift that includes personal information and relevant details about customers.
+<q>**Prerequisites**
+<br><br>
+For this tutorial create two datasets in the Producer account.
+<br>**Claims:** Create a dataset in S3 that contains information on insurance claims filed. Additionally, use the Glue Data Catalog to catalog this data.
+<br>**Customer:** Create a dataset in Redshift that includes personal information and relevant details about customers.
+</q>
 
 With the projects and environments now created, we can proceed to import existing data, catalog it, and ultimately publish it and then will make the data easy to understand with business glossary and business name generation.
 

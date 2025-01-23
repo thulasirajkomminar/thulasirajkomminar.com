@@ -41,9 +41,10 @@ Moving Amazon Redshift to a new account and region might seem difficult, but it 
 </center>
 <br>
 
-> **Prerequisites**
-> 
-> For the migration process, choose a maintenance window with minimal write activity, ensuring alignment with the organization’s RTO and RPO requirements.
+<q>**Prerequisites**
+<br><br>
+For the migration process, choose a maintenance window with minimal write activity, ensuring alignment with the organization’s RTO and RPO requirements.
+</q>
 
 # Steps
 

@@ -174,9 +174,10 @@ Now, let’s delve into the deployment job’s steps. We’ve included four key 
 
 4. **`Run CodeBuild:`** This final step initiates an AWS CodeBuild project and waits for its status, ensuring a smooth and coordinated deployment process.
 
-> **Note:** 
-> 
-> Ensure that the `environment` name in the actions file corresponds with the GitHub repository’s environment name.
+<q>**Note** 
+<br>
+Ensure that the `environment` name in the actions file corresponds with the GitHub repository’s environment name.
+</q>
 
 # AWS
 
@@ -206,9 +207,10 @@ Now, within the IAM services, select _Create role_. Opt for the _Custom trust po
 
 Here’s the trust policy text that you should use in the custom trust policy text box:
 
-> **Note:** 
-> 
-> Replace the GitHub `username/repository` with your own.
+<q>**Note**
+<br>
+Replace the GitHub `username/repository` with your own.
+</q>
 
 ```json
 {
@@ -274,9 +276,10 @@ Next, let’s create a second role for CodeBuild to assume. When you click the _
 
 Now, head over to the CodeBuild service and select _Create build project_. Specify the project name as _CD-CodeBuild_. In the Source section, choose _GitHub_ from the dropdown and include the Repository URL: `https://github.com/komminarlabs/cd-with-github-actions`
 
-> **Note:** 
-> 
-> You have the option to authenticate with GitHub using either OAuth or a personal token.
+<q>**Note**
+<br><br>
+You have the option to authenticate with GitHub using either OAuth or a personal token.
+</q>
 
 Apply the following Environment settings, and select the role you previously created.
 

@@ -40,15 +40,13 @@ Redshift federated query lets you query and analyse data across multiple operati
 
 I have explained how to setup AWS resources in the below steps.
 
-> **Prerequisites**
->
-> - VPC Peering should be enabled between the accounts.
->
-> - Amazon Redshift cluster should have a cluster maintenance version that supports federated queries.
->
-> - Amazon Redshift cluster should have enhanced VPC routing enabled.
->
-> - Grant select access to `innodb_index_stats` & `innodb_table_stats` for the aurora user in the aurora cluster.
+<q>**Prerequisites**
+<br>
+<br>• VPC Peering should be enabled between the accounts.
+<br>• Amazon Redshift cluster should have a cluster maintenance version that supports federated queries.
+<br>• Amazon Redshift cluster should have enhanced VPC routing enabled.
+<br>• Grant select access to `innodb_index_stats` & `innodb_table_stats` for the aurora user in the aurora cluster.
+</q>
 
 # Steps
 
