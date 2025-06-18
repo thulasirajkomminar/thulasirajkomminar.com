@@ -59,7 +59,7 @@ First, we’ll establish the `development` and `production` environments and imp
 Navigate to the repository where you intend to set up the Continuous Deployment (CD). Click on _Settings_, and then select _Environments_ from the sidebar. To add environments, simply click on the _New Environment_ button. As depicted in the image below, I have established two environments.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/1.webp" style="width: 70%"/>
+<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/1.jpg" style="width: 70%"/>
 </center>
 <br>
 
@@ -274,7 +274,7 @@ Next, let’s create a second role for CodeBuild to assume. When you click the _
 
 ## CodeBuild
 
-Now, head over to the CodeBuild service and select _Create build project_. Specify the project name as _CD-CodeBuild_. In the Source section, choose _GitHub_ from the dropdown and include the Repository URL: `https://github.com/komminarlabs/cd-with-github-actions`
+Now, head over to the CodeBuild service and select _Create build project_. Specify the project name as _CD-CodeBuild_. In the Source section, choose _GitHub_ from the dropdown and include the Repository URL: `https://github.com/thulasirajkomminar/cd-with-github-actions`
 
 <q>**Note**
 <br><br>
@@ -317,12 +317,12 @@ Alright, now that we’ve configured everything on both the GitHub and AWS sides
 After pushing a change directly to the `develop` branch, it promptly initiated a deployment to the development environment. The deployment was successful, and you can view the corresponding CodeBuild logs within the Actions.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/7.webp" style="width: 70%"/>
+<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/7.jpg" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/8.webp" style="width: 70%"/>
+<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/8.jpg" style="width: 70%"/>
 </center>
 <br>
 

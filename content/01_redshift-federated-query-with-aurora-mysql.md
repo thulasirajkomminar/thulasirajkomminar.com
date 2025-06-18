@@ -77,7 +77,7 @@ I have explained how to setup AWS resources in the below steps.
 
 - Add a policy to the Redshift role in Account X to allow access to Account A’s KMS key and SecretManger like below.
 
-```josn
+```json
 {
    "Version":"2012-10-17",
    "Statement":[

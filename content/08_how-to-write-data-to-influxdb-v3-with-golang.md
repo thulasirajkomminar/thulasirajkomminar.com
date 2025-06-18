@@ -124,6 +124,6 @@ By following the steps outlined in this tutorial, you’re now equipped with the
 
 # References
 
-- [https://github.com/komminarlabs/iiot-measurements-influxdb3](https://github.com/komminarlabs/iiot-measurements-influxdb3)
+- [https://github.com/thulasirajkomminar/iiot-measurements-influxdb3](https://github.com/thulasirajkomminar/iiot-measurements-influxdb3)
 - [https://github.com/InfluxCommunity/influxdb3-go/blob/main/README.md](https://github.com/InfluxCommunity/influxdb3-go/blob/main/README.md)
 - [https://docs.influxdata.com/influxdb/cloud-serverless/reference/syntax/line-protocol/](https://docs.influxdata.com/influxdb/cloud-serverless/reference/syntax/line-protocol/)

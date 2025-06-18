@@ -92,7 +92,7 @@ Establish a GitHub repository dedicated to housing your infrastructure configura
 Once you’ve created the repository, proceed to the Settings page. Access the _Secrets and Variables_ menu, specifically selecting Actions. Click _New Repository Secret_ and input the Terraform API token generated in the previous step.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/6.webp" style="width: 70%"/>
+<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/6.jpg" style="width: 100%"/>
 </center>
 <br>
 
@@ -298,7 +298,7 @@ After incorporating the Terraform configuration files into a `feature` branch, l
 <br>
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/9.webp" style="width: 70%"/>
+<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/9.jpg" style="width: 70%"/>
 </center>
 <br>
 
@@ -307,7 +307,7 @@ After incorporating the Terraform configuration files into a `feature` branch, l
 After a thorough review of the pull request and ensuring the Terraform plan results meet expectations, proceed to merge the pull request. This will trigger the Terraform apply process.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/10.webp" style="width: 70%"/>
+<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/10.jpg" style="width: 70%"/>
 </center>
 <br>
 
