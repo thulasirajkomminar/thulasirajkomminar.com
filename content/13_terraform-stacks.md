@@ -191,7 +191,7 @@ identity_token "aws" {
 }
 ```
 
-I have an [example](https://github.com/komminarlabs/terraform-stacks-initial-setup) that demonstrates how to set up OIDC in conjunction with Stacks.
+I have an [example](https://github.com/thulasirajkomminar/terraform-stacks-initial-setup) that demonstrates how to set up OIDC in conjunction with Stacks.
 
 ## Credentials
 
@@ -220,7 +220,7 @@ To demonstrate Terraform Stacks, we'll create a REST API in API Gateway that act
 2. **API Gateway resources** configured to expose S3 operations.
 3. An **S3 bucket** to store the objects.
 
-For this demo, we'll create three separate components for each of these resource groups. Now, let’s dive into the Stack configuration. The complete setup can be found in the [terraform-stacks-demo](https://github.com/komminarlabs/terraform-stacks-demo) repository.
+For this demo, we'll create three separate components for each of these resource groups. Now, let’s dive into the Stack configuration. The complete setup can be found in the [terraform-stacks-demo](https://github.com/thulasirajkomminar/terraform-stacks-demo) repository.
 
 ## `*.tfstack.hcl`
 
@@ -240,7 +240,7 @@ Initializes the three main components, using local modules as the source for eac
 
 ## `deployments.tfdeploy.hcl`
 
-I've defined a `store` block to retrieve the `role_arn` created in the [terraform-stacks-initial-setup](https://github.com/komminarlabs/terraform-stacks-initial-setup) repository.
+I've defined a `store` block to retrieve the `role_arn` created in the [terraform-stacks-initial-setup](https://github.com/thulasirajkomminar/terraform-stacks-initial-setup) repository.
 
 ```hcl
 store "varset" "oidc_role_arn" {
