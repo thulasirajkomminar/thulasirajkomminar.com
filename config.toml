@@ -5,12 +5,17 @@ description = "AWS • Terraform • Programming"
 default_language = "en"
 theme = "after-dark"
 generate_feeds = true
+feed_filenames = ["rss.xml"]
+author = "Thulasiraj Komminar"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+# When set to "false", Sitemap.xml is not generated
+generate_sitemap = true
 
 taxonomies = [
     {name = "categories", feed = true},
@@ -38,7 +43,6 @@ enable_search = true
 
 [extra]
 paginate_by = 5
-author = "Thulasiraj Komminar"
 after_dark_title = "Thulasiraj Komminar | AWS • Terraform • Programming"
 
 after_dark_menu = [
@@ -48,5 +52,5 @@ after_dark_menu = [
   { name = "GitHub", url = "https://github.com/thulasirajkomminar" },
   { name = "LinkedIn", url = "https://www.linkedin.com/in/thulasirajkomminar/" },
   { name = "𝕏", url = "https://x.com/TKomminar" },
-  #{ name = "RSS", url = "$BASE_URL/rss.xml" },
+  { name = "RSS", url = "$BASE_URL/rss.xml" },
 ]
