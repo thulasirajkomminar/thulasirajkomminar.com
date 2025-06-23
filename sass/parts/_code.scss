@@ -81,6 +81,41 @@ $language-colors: (
   }
 }
 
+/* Copy button styles for code blocks */
+.code-block-wrapper {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-family: monospace;
+  opacity: 0.7;
+}
+
+.copy-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+.copy-button.copied {
+  background: #fff;
+  color: #000;
+}
+
+pre:hover .copy-button {
+  opacity: 1;
+}
+
 // Styling for pre blocks
 pre {
   background-color: var(--bg-primary) !important;
