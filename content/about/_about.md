@@ -15,7 +15,11 @@ date = 2021-10-10
 
 - 🧑‍💻 **Data Platform Engineer** at [Schuberg Philis](https://schubergphilis.com/en)
 - 💻 **AWS Community Builder**
-- 🚀 **Occasionally building Terraform & Pulumi providers** at [Komminar Labs](https://github.com/komminarlabs)
+- 🚀 **Occasionally building Terraform providers** at [Komminar Labs](https://github.com/komminarlabs)
+
+## Languages and Tools
+
+![My Skills](https://skills.syvixor.com/api/icons?i=aws,terraform,nomad,githubactions,datadog,grafana,litmus,kepware,influxdb,go,py,zig,iceberg)
 
 ## My Socials
 
