@@ -26,7 +26,7 @@ date = 2021-10-10
 <span>
   <a href="https://github.com/thulasirajkomminar"><img src="https://skills.syvixor.com/api/icons?i=github" /></a>
   <a href="https://www.linkedin.com/in/thulasirajkomminar/"><img src="https://skills.syvixor.com/api/icons?i=linkedin" /></a>
-  <a href="https://x.com/TKomminar"><img src="https://skills.syvixor.com/api/icons?i=x" /></a>
+  <a href="https://x.com/TheKomminar"><img src="https://skills.syvixor.com/api/icons?i=x" /></a>
   <a href="https://bsky.app/profile/thulasirajkomminar.com"><img src="https://skills.syvixor.com/api/icons?i=bluesky" /></a>
 </span>
 <br><br>
