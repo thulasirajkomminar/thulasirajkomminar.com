@@ -38,9 +38,6 @@ include_title = true
 include_description = true
 include_content = true
 
-# Enable search bar 
-enable_search = true 
-
 [extra]
 paginate_by = 5
 after_dark_title = "Thulasiraj Komminar | AWS • Terraform • Programming"
@@ -49,8 +46,8 @@ after_dark_menu = [
   { name = "Home", url = "$BASE_URL" },
   { name = "About", url = "$BASE_URL/about/about-me" },
   { name = "Categories", url = "$BASE_URL/categories" },
-  { name = "GitHub", url = "https://github.com/thulasirajkomminar" },
-  { name = "LinkedIn", url = "https://www.linkedin.com/in/thulasirajkomminar/" },
-  { name = "𝕏", url = "https://x.com/TKomminar" },
   { name = "RSS", url = "$BASE_URL/rss.xml" },
 ]
+
+# Enable search bar 
+enable_search = true
