@@ -1,7 +1,6 @@
 +++
 title = "About me"
 slug = "about-me"
-date = 2021-10-10
 +++
 
 **Hi there 👋, I'm Thulasiraj**
