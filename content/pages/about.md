@@ -1,5 +1,5 @@
 +++
-title = "About me"
+title = "About Me"
 slug = "about-me"
 +++
 
@@ -32,7 +32,7 @@ slug = "about-me"
 ## Experience
 
 <h3>Mission Critical Engineer -&nbsp;<a href="https://schubergphilis.com/en">Schuberg Philis</a>&nbsp;- Amsterdam</h3>
-<p align="right"><i>Aug 2019 - Present · 5 yrs 11 mos</i></p>
+<p align="right"><i>Aug 2019 - Present · 6 yrs 2 mos</i></p>
 
 Helping HEINEKEN in becoming the best Connected Brewer by elevating standards in sustainability and responsibility, while unleashing the untapped potential of its workforce.
 

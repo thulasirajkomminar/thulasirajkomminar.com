@@ -55,7 +55,7 @@ author = "Thulasiraj Komminar"
 
 menu_items = [
   { name = "Home", url = "$BASE_URL" },
-  { name = "About", url = "$BASE_URL/pages/about-me" },
+  { name = "About Me", url = "$BASE_URL/pages/about-me" },
   { name = "RSS", url = "$BASE_URL/rss.xml" },
 ]
 
@@ -66,7 +66,7 @@ enable_post_view_navigation = true
 # The text shown at the bottom of a post,
 # before earlier/later post links.
 # Defaults to "Thanks for reading! Read other posts?"
-post_view_navigation_prompt = """Thank you for reading! Read other posts?"""
+post_view_navigation_prompt = "Thanks for reading! 💡 Want more? [Check out my other posts →]"
 
 use_full_hack_font = true
 
