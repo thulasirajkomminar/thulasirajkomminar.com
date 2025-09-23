@@ -5,7 +5,7 @@ date = 2023-10-30
 aliases = ["/efficient-continuous-deployment-with-github-environments-and-aws-codebuild-9086aef7d913", "/posts/efficient-continuous-deployment-with-github-environments-and-aws-codebuild"]
 
 [taxonomies]
-categories = ["AWS", "CICD"]
+#categories = ["AWS", "CICD"]
 tags = ["cicd", "github", "actions", "codebuild", "aws", "continuous-deployment", "environments", "deployment"]
 +++
 
@@ -174,10 +174,7 @@ Now, let’s delve into the deployment job’s steps. We’ve included four key 
 
 4. **`Run CodeBuild:`** This final step initiates an AWS CodeBuild project and waits for its status, ensuring a smooth and coordinated deployment process.
 
-<q>**Note** 
-<br>
-Ensure that the `environment` name in the actions file corresponds with the GitHub repository’s environment name.
-</q>
+>**Note:** Ensure that the `environment` name in the actions file corresponds with the GitHub repository’s environment name.
 
 # AWS
 
@@ -207,10 +204,7 @@ Now, within the IAM services, select _Create role_. Opt for the _Custom trust po
 
 Here’s the trust policy text that you should use in the custom trust policy text box:
 
-<q>**Note**
-<br>
-Replace the GitHub `username/repository` with your own.
-</q>
+>**Note:** Replace the GitHub `username/repository` with your own.
 
 ```json
 {
@@ -276,10 +270,7 @@ Next, let’s create a second role for CodeBuild to assume. When you click the _
 
 Now, head over to the CodeBuild service and select _Create build project_. Specify the project name as _CD-CodeBuild_. In the Source section, choose _GitHub_ from the dropdown and include the Repository URL: `https://github.com/thulasirajkomminar/cd-with-github-actions`
 
-<q>**Note**
-<br><br>
-You have the option to authenticate with GitHub using either OAuth or a personal token.
-</q>
+>**Note:** You have the option to authenticate with GitHub using either OAuth or a personal token.
 
 Apply the following Environment settings, and select the role you previously created.
 

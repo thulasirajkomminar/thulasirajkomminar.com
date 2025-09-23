@@ -4,7 +4,7 @@ slug = "understanding-aws-lambda-event-source-mapping"
 date = 2024-12-26
 
 [taxonomies]
-categories = ["AWS"]
+#categories = ["AWS"]
 tags = ["aws", "lambda", "serverless", "event-source", "event-source-mapping", "sqs", "kinesis", "re:Invent"]
 +++
 

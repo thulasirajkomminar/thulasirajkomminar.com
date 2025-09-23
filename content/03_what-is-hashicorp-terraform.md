@@ -5,7 +5,7 @@ date = 2023-09-22
 aliases = ["/what-is-hashicorp-terraform-42d419a61cb9", "posts/what-is-hashicorp-terraform"]
 
 [taxonomies]
-categories = ["Terraform"]
+#categories = ["Terraform"]
 tags = ["terraform", "hashicorp", "iac", "infrastructure", "platform", "engineering"]
 +++
 
