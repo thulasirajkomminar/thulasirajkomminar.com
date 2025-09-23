@@ -5,7 +5,6 @@ date = 2022-09-15
 aliases = ["/lake-formation-cross-account-access-using-terraform-e21279e30531", "/posts/lake-formation-cross-account-access-using-terraform"]
 
 [taxonomies]
-#categories = ["AWS", "Terraform", "Data Governance"]
 tags = ["aws", "cross-account", "data-governance", "data-catalog", "glue", "lakeformation", "redshift", "athena", "s3", "datazone"]
 +++
 

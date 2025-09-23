@@ -5,7 +5,6 @@ date = 2024-05-18
 aliases = ["/streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform-3abbecf347c3", "/posts/streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform/"]
 
 [taxonomies]
-#categories = ["AWS", "Terraform"]
 tags = ["aws", "redshift", "okta", "terraform", "query-editor"]
 +++
 

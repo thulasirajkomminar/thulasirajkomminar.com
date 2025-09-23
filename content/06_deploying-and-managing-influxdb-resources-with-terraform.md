@@ -5,7 +5,6 @@ date = 2024-02-15
 aliases = ["/deploying-and-managing-influxdb-resources-with-terraform-8f1c3c5be8ff", "/posts/deploying-and-managing-influxdb-resources-with-terraform"]
 
 [taxonomies]
-#categories = ["Terraform", "IIoT"]
 tags = ["terraform", "hashicorp", "iac", "infrastructure", "platform", "engineering", "influxdb", "iiot", "manufacturing", "timeseries", "database"]
 +++
 

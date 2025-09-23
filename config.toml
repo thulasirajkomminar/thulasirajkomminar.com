@@ -23,7 +23,6 @@ build_search_index = true
 generate_sitemap = true
 
 taxonomies = [
-    #{name = "categories", feed = true},
     {name = "tags", feed = true},
 ]
 

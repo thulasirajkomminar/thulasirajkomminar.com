@@ -5,7 +5,6 @@ date = 2021-10-15
 aliases = ["/redshift-federated-query-with-aurora-mysql-7de76dda8a1f", "/posts/redshift-federated-query-with-aurora-mysql"]
 
 [taxonomies]
-#categories = ["AWS"]
 tags = ["aws", "redshift", "federation", "query", "federated-query", "mysql"]
 +++
 

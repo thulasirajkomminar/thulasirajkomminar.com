@@ -5,7 +5,6 @@ date = 2024-03-16
 aliases = ["/how-to-bridge-a-terraform-provider-to-pulumi-623db829f52f", "/posts/how-to-bridge-a-terraform-provider-to-pulumi"]
 
 [taxonomies]
-#categories = ["Terraform", "Pulumi"]
 tags = ["terraform", "pulumi", "provider", "bridge", "iot", "iac"]
 +++
 

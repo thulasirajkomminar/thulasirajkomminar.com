@@ -5,7 +5,6 @@ date = 2024-07-04
 aliases = ["/towards-aws/how-to-migrate-amazon-redshift-to-a-different-account-and-region-step-by-step-guide-ba8f56f28911", "/posts/how-to-migrate-amazon-redshift-to-a-different-account-and-region", "/how-to-migrate-amazon-redshift-to-a-different-account-and-region-step-by-step-guide-ba8f56f28911"]
 
 [taxonomies]
-#categories = ["AWS"]
 tags = ["aws", "migration", "snapshot", "cross-region", "redshift"]
 +++
 
