@@ -5,7 +5,6 @@ date = 2024-03-16
 aliases = ["/how-to-bridge-a-terraform-provider-to-pulumi-623db829f52f", "/posts/how-to-bridge-a-terraform-provider-to-pulumi"]
 
 [taxonomies]
-categories = ["Terraform", "Pulumi"]
 tags = ["terraform", "pulumi", "provider", "bridge", "iot", "iac"]
 +++
 
@@ -48,20 +47,18 @@ In this blog post, we’ll delve into the process of creating a Pulumi Resource 
 </details>
 <br>
 
-<q>**Prerequisites**
-<br><br>
-Before delving further, it’s essential to possess a foundational understanding of [Terraform providers](https://developer.hashicorp.com/terraform/language/providers), [Pulumi resource providers](https://www.pulumi.com/docs/iac/concepts/resources/providers/), and [InfluxDB](https://www.influxdata.com/).
-<br><br>
-Ensure the following tools are installed and present in your `%PATH`:
-<br>
-<br>• pulumictl
-<br>• Go 1.17 or latest
-<br>• NodeJS 14.x
-<br>• Yarn
-<br>• TypeScript
-<br>• Python
-<br>• .NET
-</q>
+>**Prerequisites:**
+>
+> Before delving further, it’s essential to possess a foundational understanding of [Terraform providers](https://developer.hashicorp.com/terraform/language/providers), [Pulumi resource providers](https://www.pulumi.com/docs/iac/concepts/resources/providers/), and [InfluxDB](https://www.influxdata.com/).
+>
+> Ensure the following tools are installed and present in your `%PATH`:
+> - pulumictl
+> - Go 1.17 or latest
+> - NodeJS 14.x
+> - Yarn
+> - TypeScript
+> - Python
+> - .NET
 
 # Why Bridge a Terraform Provider to Pulumi
 

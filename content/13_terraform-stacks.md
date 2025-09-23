@@ -5,7 +5,6 @@ date = 2024-10-30
 aliases = ["/posts/terraform-stacks"]
 
 [taxonomies]
-categories = ["Terraform"]
 tags = ["aws", "terraform", "stacks", "iac", "infrastructure", "platform", "automation", "hashicorp"]
 +++
 

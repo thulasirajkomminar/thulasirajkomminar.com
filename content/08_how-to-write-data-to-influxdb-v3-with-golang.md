@@ -5,7 +5,6 @@ date = 2024-05-14
 aliases = ["/how-to-write-data-to-influxdb-v3-with-golang-a-step-by-step-tutorial-f32b0d3ea930", "/posts/how-to-write-data-to-influxdb-v3-with-golang"]
 
 [taxonomies]
-categories = ["IIoT"]
 tags = ["influxdb", "v3", "iiot", "manufacturing", "iot"]
 +++
 

@@ -5,7 +5,6 @@ date = 2024-02-15
 aliases = ["/deploying-and-managing-influxdb-resources-with-terraform-8f1c3c5be8ff", "/posts/deploying-and-managing-influxdb-resources-with-terraform"]
 
 [taxonomies]
-categories = ["Terraform", "IIoT"]
 tags = ["terraform", "hashicorp", "iac", "infrastructure", "platform", "engineering", "influxdb", "iiot", "manufacturing", "timeseries", "database"]
 +++
 
@@ -42,12 +41,10 @@ InfluxDB is a specialized time-series database tailored for efficiently handling
 </details>
 <br>
 
-<q>**Prerequisites**
-<br><br>
-To install Terraform, you can easily follow the steps outlined in this blog post [Install Terraform](https://developer.hashicorp.com/terraform/install).
-<br><br>
-Before diving in, ensure you have a basic understanding of InfluxDB and its components. For installation guidance, refer to this resource [Install InfluxDB](https://docs.influxdata.com/influxdb/v2/install/).
-</q>
+>**Prerequisites:**
+>
+> - To install Terraform, you can easily follow the steps outlined in this blog post [Install Terraform](https://developer.hashicorp.com/terraform/install).
+> - Before diving in, ensure you have a basic understanding of InfluxDB and its components. For installation guidance, refer to this resource [Install InfluxDB](https://docs.influxdata.com/influxdb/v2/install/).
 
 # Provider Configuration
 

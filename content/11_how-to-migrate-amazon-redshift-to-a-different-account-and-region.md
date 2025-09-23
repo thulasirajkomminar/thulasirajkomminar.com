@@ -5,7 +5,6 @@ date = 2024-07-04
 aliases = ["/towards-aws/how-to-migrate-amazon-redshift-to-a-different-account-and-region-step-by-step-guide-ba8f56f28911", "/posts/how-to-migrate-amazon-redshift-to-a-different-account-and-region", "/how-to-migrate-amazon-redshift-to-a-different-account-and-region-step-by-step-guide-ba8f56f28911"]
 
 [taxonomies]
-categories = ["AWS"]
 tags = ["aws", "migration", "snapshot", "cross-region", "redshift"]
 +++
 
@@ -41,10 +40,7 @@ Moving Amazon Redshift to a new account and region might seem difficult, but it 
 </center>
 <br>
 
-<q>**Prerequisites**
-<br><br>
-For the migration process, choose a maintenance window with minimal write activity, ensuring alignment with the organization’s RTO and RPO requirements.
-</q>
+>**Prerequisites:** For the migration process, choose a maintenance window with minimal write activity, ensuring alignment with the organization’s RTO and RPO requirements.
 
 # Steps
 
