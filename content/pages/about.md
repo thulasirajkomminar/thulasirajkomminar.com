@@ -27,6 +27,7 @@ slug = "about-me"
   <a href="https://www.linkedin.com/in/thulasirajkomminar/"><img src="https://skills.syvixor.com/api/icons?i=linkedin" /></a>
   <a href="https://x.com/TKomminar"><img src="https://skills.syvixor.com/api/icons?i=x" /></a>
   <a href="https://bsky.app/profile/thulasirajkomminar.com"><img src="https://skills.syvixor.com/api/icons?i=bluesky" /></a>
+  <a href="https://www.instagram.com/tkomminar"><img src="https://skills.syvixor.com/api/icons?i=instagram" /></a>
 </span>
 
 ## Experience
