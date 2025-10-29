@@ -220,7 +220,7 @@ Here’s the trust policy text that you should use in the custom trust policy te
           "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
         },
         "StringLike": {
-          "token.actions.githubusercontent.com:sub": "repo:komminarlabs/cd-with-github-actions:*"
+          "token.actions.githubusercontent.com:sub": "repo:thulasirajkomminar/cd-with-github-actions:*"
         }
       }
     }
