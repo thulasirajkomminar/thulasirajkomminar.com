@@ -258,11 +258,11 @@ A module that has been called by another module is often referred to as a child 
 
 #### Published Modules
 
-In addition to modules from the local filesystem, Terraform can load modules from a public or private registry. You can find some of my AWS Terraform modules [here](https://github.com/orgs/komminarlabs/repositories?q=terraform-aws-).
+In addition to modules from the local filesystem, Terraform can load modules from a public or private registry. You can find some of my AWS Terraform modules [here](https://github.com/orgs/thulasirajkomminar/repositories?q=terraform-aws-).
 
 ```hcl
 module "example_glue_job" {
-  source            = "github.com/komminarlabs/terraform-aws-glue-job?ref=v0.1.0"
+  source            = "github.com/thulasirajkomminar/terraform-aws-glue-job?ref=v0.1.0"
   name              = "example-glue-job"
   max_retries       = 1
   number_of_workers = 2
