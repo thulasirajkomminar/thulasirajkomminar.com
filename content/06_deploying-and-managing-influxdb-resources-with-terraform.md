@@ -48,7 +48,7 @@ InfluxDB is a specialized time-series database tailored for efficiently handling
 
 # Provider Configuration
 
-To create and manage InfluxDB resources using Terraform, it utilizes specialized plugins known as providers to interface with InfluxDB. I’ve developed and published a provider for InfluxDB on the [Terraform registry](https://registry.terraform.io/providers/komminarlabs/influxdb/latest), enabling seamless resource creation and management.
+To create and manage InfluxDB resources using Terraform, it utilizes specialized plugins known as providers to interface with InfluxDB. I’ve developed and published a provider for InfluxDB on the [Terraform registry](https://registry.terraform.io/providers/thulasirajkomminar/influxdb/latest), enabling seamless resource creation and management.
 
 Let’s begin by configuring the provider.
 
@@ -58,7 +58,7 @@ Let’s begin by configuring the provider.
 terraform {
   required_providers {
     influxdb = {
-      source  = "komminarlabs/influxdb"
+      source  = "thulasirajkomminar/influxdb"
       version = "1.0.0"
     }
   }
@@ -81,7 +81,7 @@ provider "influxdb" {
 
 # Creating and Managing InfluxDB Resources
 
-The [`komminarlabs/influxdb`](https://registry.terraform.io/providers/komminarlabs/influxdb/latest/docs) provider offers various data sources and resources.
+The [`thulasirajkomminar/influxdb`](https://registry.terraform.io/providers/thulasirajkomminar/influxdb/latest/docs) provider offers various data sources and resources.
 
 ## Data Sources:
 
@@ -225,11 +225,11 @@ output "signals_bucket" {
 
 - [https://developer.hashicorp.com/terraform/install](https://developer.hashicorp.com/terraform/install)
 - [https://docs.influxdata.com/influxdb/v2/install/](https://docs.influxdata.com/influxdb/v2/install/)
-- [https://registry.terraform.io/providers/komminarlabs/influxdb/latest](https://registry.terraform.io/providers/komminarlabs/influxdb/latest)
+- [https://registry.terraform.io/providers/thulasirajkomminar/influxdb/latest](https://registry.terraform.io/providers/thulasirajkomminar/influxdb/latest)
 - [https://developer.hashicorp.com/terraform/language](https://developer.hashicorp.com/terraform/language)
-- [https://github.com/komminarlabs/terraform-provider-influxdb/tree/main/examples](https://github.com/komminarlabs/terraform-provider-influxdb/tree/main/examples)
+- [https://github.com/thulasirajkomminar/terraform-provider-influxdb/tree/main/examples](https://github.com/thulasirajkomminar/terraform-provider-influxdb/tree/main/examples)
 - [https://thulasirajkomminar.com/what-is-hashicorp-terraform](https://thulasirajkomminar.com/what-is-hashicorp-terraform)
 
 # Conclusion
 
-Now that we’ve explored how to leverage Terraform for creating and managing InfluxDB resources, it’s time to start utilizing it. If you encounter any bugs or issues while using the provider, be sure to [report](https://github.com/komminarlabs/terraform-provider-influxdb/issues) them promptly.
+Now that we’ve explored how to leverage Terraform for creating and managing InfluxDB resources, it’s time to start utilizing it. If you encounter any bugs or issues while using the provider, be sure to [report](https://github.com/thulasirajkomminar/terraform-provider-influxdb/issues) them promptly.

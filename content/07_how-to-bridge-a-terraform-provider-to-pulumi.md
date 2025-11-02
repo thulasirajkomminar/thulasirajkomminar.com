@@ -8,7 +8,7 @@ aliases = ["/how-to-bridge-a-terraform-provider-to-pulumi-623db829f52f", "/posts
 tags = ["terraform", "pulumi", "provider", "bridge", "iot", "iac"]
 +++
 
-In this blog post, we’ll delve into the process of creating a Pulumi Resource provider sourced from a Terraform Provider developed with the Terraform Plugin Framework. Our focus will be on leveraging the [bridge package](https://github.com/pulumi/pulumi-terraform-bridge) to facilitate this transition seamlessly. To illustrate, we’ll demonstrate bridging the [InfluxDB Terraform provider](https://registry.terraform.io/providers/komminarlabs/influxdb/latest) to Pulumi.
+In this blog post, we’ll delve into the process of creating a Pulumi Resource provider sourced from a Terraform Provider developed with the Terraform Plugin Framework. Our focus will be on leveraging the [bridge package](https://github.com/pulumi/pulumi-terraform-bridge) to facilitate this transition seamlessly. To illustrate, we’ll demonstrate bridging the [InfluxDB Terraform provider](https://registry.terraform.io/providers/thulasirajkomminar/influxdb/latest) to Pulumi.
 
 <!-- more -->
 
@@ -88,7 +88,7 @@ If you choose the cookiecutter template, setting up an initial version is straig
 4. Execute the following command to update the files, replacing placeholders with the name of your provider.
 
 ```bash
-make prepare NAME=influxdb REPOSITORY=github.com/komminarlabs/pulumi-influxdb
+make prepare NAME=influxdb REPOSITORY=github.com/thulasirajkomminar/pulumi-influxdb
 ```
 
 - This will do the following:
@@ -116,13 +116,13 @@ mkdir provider/shim
 2. Add a `go.mod` file with the following content.
 
 ```go
-module github.com/komminarlabs/terraform-provider-influxdb/shim
+module github.com/thulasirajkomminar/terraform-provider-influxdb/shim
 
 go 1.22
 
 require (
  github.com/hashicorp/terraform-plugin-framework v1.6.0
- github.com/komminarlabs/terraform-provider-influxdb v1.0.1
+ github.com/thulasirajkomminar/terraform-provider-influxdb v1.0.1
 )
 ```
 
@@ -133,7 +133,7 @@ package shim
 
 import (
  tfpf "github.com/hashicorp/terraform-plugin-framework/provider"
- "github.com/komminarlabs/terraform-provider-influxdb/internal/provider"
+ "github.com/thulasirajkomminar/terraform-provider-influxdb/internal/provider"
 )
 
 func NewProvider() tfpf.Provider {
@@ -155,7 +155,7 @@ import (
  // Allow embedding bridge-metadata.json in the provider.
  _ "embed"
 
- influxdbshim "github.com/komminarlabs/terraform-provider-influxdb/shim"
+ influxdbshim "github.com/thulasirajkomminar/terraform-provider-influxdb/shim"
 
  pf "github.com/pulumi/pulumi-terraform-bridge/pf/tfbridge"
  "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfbridge"
@@ -164,7 +164,7 @@ import (
  "github.com/pulumi/pulumi/sdk/v3/go/common/resource"
 
  // Import custom shim
- "github.com/komminarlabs/pulumi-influxdb/provider/pkg/version"
+ "github.com/thulasirajkomminar/pulumi-influxdb/provider/pkg/version"
 )
 ```
 
@@ -180,20 +180,20 @@ func Provider() tfbridge.ProviderInfo {
 }
 ```
 
-- Edit `provider/go.mod` and add `github.com/komminarlabs/terraform-provider-influxdb/shim v0.0.0` to the requirements.
+- Edit `provider/go.mod` and add `github.com/thulasirajkomminar/terraform-provider-influxdb/shim v0.0.0` to the requirements.
 
 ```go
-module github.com/komminarlabs/pulumi-influxdb/provider
+module github.com/thulasirajkomminar/pulumi-influxdb/provider
 
 go 1.22
 
 replace (
  github.com/hashicorp/terraform-plugin-sdk/v2 => github.com/pulumi/terraform-plugin-sdk/v2 v2.0.0-20240202163305-e2a20ae13ef9
- github.com/komminarlabs/terraform-provider-influxdb/shim => ./shim
+ github.com/thulasirajkomminar/terraform-provider-influxdb/shim => ./shim
 )
 
 require (
- github.com/komminarlabs/terraform-provider-influxdb/shim v0.0.0
+ github.com/thulasirajkomminar/terraform-provider-influxdb/shim v0.0.0
  github.com/pulumi/pulumi-terraform-bridge/pf v0.29.0
  github.com/pulumi/pulumi-terraform-bridge/v3 v3.76.0
  github.com/pulumi/pulumi/sdk/v3 v3.108.1
@@ -449,7 +449,7 @@ To publish your package on the Pulumi Registry, all package documentation is man
 
 ```json
 {
-  "repoSlug": "komminarlabs/pulumi-influxdb",
+  "repoSlug": "thulasirajkomminar/pulumi-influxdb",
   "schemaFile": "provider/cmd/pulumi-resource-influxdb/schema.json"
 },
 ```
@@ -474,7 +474,7 @@ pulumi new python
 source venv/bin/activate
 
 # Install the provider package
-pip install komminarlabs_influxdb
+pip install thulasirajkomminar_influxdb
 ```
 
 ## Set up environment
@@ -495,7 +495,7 @@ Add the following contents to the `__main__.py` file
 """A Python Pulumi program"""
 
 import pulumi
-import komminarlabs_influxdb as influxdb
+import thulasirajkomminar_influxdb as influxdb
 
 organization = influxdb.Organization(
     "IoT",
@@ -534,5 +534,5 @@ You can also view the stacks in Pulumi cloud.
 # Additional Resources
 
 - [https://www.pulumi.com/registry/packages/influxdb/](https://www.pulumi.com/registry/packages/influxdb/)
-- [https://github.com/komminarlabs/pulumi-influxdb](https://github.com/komminarlabs/pulumi-influxdb)
+- [https://github.com/thulasirajkomminar/pulumi-influxdb](https://github.com/thulasirajkomminar/pulumi-influxdb)
 - [https://github.com/pulumi/pulumi-tf-provider-boilerplate/tree/main](https://github.com/pulumi/pulumi-tf-provider-boilerplate/tree/main)
