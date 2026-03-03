@@ -2,6 +2,7 @@ public/
 **/.vscode/
 .vercel
 !**/parts/
+zola
 
 # macOS-specific files
 .DS_Store
