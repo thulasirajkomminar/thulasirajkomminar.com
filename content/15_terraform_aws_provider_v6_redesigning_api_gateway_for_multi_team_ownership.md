@@ -13,6 +13,11 @@ Then the HashiCorp AWS Terraform provider v6 landed and with it, the removal of 
 
 <!-- more -->
 
+<center>
+<img src="/images/15_terraform_aws_provider_v6_redesigning_api_gateway_for_multi_team_ownership/1.png" style="width: 100%"/>
+</center>
+<br>
+
 <details>
 <summary><b>Table of Contents</b></summary>
 
@@ -40,10 +45,10 @@ api.example.com
     └── base path: /  →  shared REST API  →  "prd" stage
                                │
                      ┌─────────┼──────────┐
-              /team1-appA   /team1-appB   /team2-appA
+              /team1-app-a   /team1-app-b   /team2-app-a
 ```
 
-This used to work because the `stage_name` in `aws_api_gateway_deployment` resource implicitly created or updated an API gateway stage. So for example the below configuration would create a deployment, automatically create a stage named `prd` and assoiciate to that deployment(if it didn't already exist) or update the stage to point to the new deployment (if it already existed).
+This used to work because the `stage_name` in `aws_api_gateway_deployment` resource implicitly created or updated an API gateway stage. So for example the below configuration would create a deployment, automatically create a stage named `prd` and associate to that deployment(if it didn't already exist) or update the stage to point to the new deployment (if it already existed).
 
 ```hcl
 resource "aws_api_gateway_deployment" "example" {
@@ -72,13 +77,13 @@ This is a nice improvement since stages now have explicit lifecycle management, 
 
 # The New Architecture: Per-Team APIs Behind a Shared Custom Domain
 
-The new refactored design splits ownership along a clean boundary. The platform team owns the custom domain and each app team owns their REST API, deployment, and stage. The connection between them is a `aws_api_gateway_base_path_mapping` resource per team, a thin explicit wire between two independentaly managed resources.
+The new refactored design splits ownership along a clean boundary. The platform team owns the custom domain and each app team owns their REST API, deployment, and stage. The connection between them is a `aws_api_gateway_base_path_mapping` resource per team, a thin explicit wire between two independently managed resources.
 
 ```bash
 api.example.com
-    ├── /{team1-appA}  →  Team1-AppA REST API  →  "prd" stage
-    ├── /{team1-appB}  →  Team1-AppB REST API  →  "prd" stage
-    └── /{team2-appA}  →  Team2-AppA REST API  →  "prd" stage
+    ├── /team1-app-a  →  Team1-App-A REST API  →  "prd" stage
+    ├── /team1-app-b  →  Team1-App-B REST API  →  "prd" stage
+    └── /team2-app-a  →  Team2-App-A REST API  →  "prd" stage
 ```
 
 From the outside, the API surface is identical. From the inside, each team is fully isolated.
@@ -200,32 +205,32 @@ resource "aws_api_gateway_rest_api" "default" {
 }
 
 # API resources and routing
-resource "aws_api_gateway_resource" "app_a_api" {
+resource "aws_api_gateway_resource" "root" {
   rest_api_id = aws_api_gateway_rest_api.default.id
   parent_id   = aws_api_gateway_rest_api.default.root_resource_id
   path_part   = "app-name"
 }
 
-resource "aws_api_gateway_resource" "app_a_api_proxy" {
+resource "aws_api_gateway_resource" "proxy" {
   rest_api_id = aws_api_gateway_rest_api.default.id
-  parent_id   = aws_api_gateway_resource.app_a_api.id
+  parent_id   = aws_api_gateway_resource.root.id
   path_part   = "{proxy+}"
 }
 
-resource "aws_api_gateway_method" "app_a_api" {
+resource "aws_api_gateway_method" "default" {
   rest_api_id   = aws_api_gateway_rest_api.default.id
-  resource_id   = aws_api_gateway_resource.app_a_api_proxy.id
+  resource_id   = aws_api_gateway_resource.proxy.id
   http_method   = "ANY"
   authorization = "NONE"
 }
 
-resource "aws_api_gateway_integration" "app_a_api" {
+resource "aws_api_gateway_integration" "default" {
   rest_api_id             = aws_api_gateway_rest_api.default.id
-  resource_id             = aws_api_gateway_resource.app_a_api_proxy.id
-  http_method             = aws_api_gateway_method.app_a_api.http_method
+  resource_id             = aws_api_gateway_resource.proxy.id
+  http_method             = aws_api_gateway_method.default.http_method
   integration_http_method = "POST"
   type                    = "AWS_PROXY"
-  uri                     = "arn:aws:apigateway:${data.aws_region.current.name}:lambda:path/2015-03-31/functions/${module.app_a_api.arn}/invocations"
+  uri                     = "arn:aws:apigateway:${data.aws_region.current.name}:lambda:path/2015-03-31/functions/${var.lambda_function_arn}/invocations"
 }
 
 # Deployment — triggers on actual resource/method/integration changes only
@@ -235,10 +240,10 @@ resource "aws_api_gateway_deployment" "default" {
 
   triggers = {
     redeployment = sha1(jsonencode([
-      aws_api_gateway_resource.app_a_api,
-      aws_api_gateway_resource.app_a_api_proxy,
-      aws_api_gateway_method.app_a_api,
-      aws_api_gateway_integration.app_a_api,
+      aws_api_gateway_resource.root,
+      aws_api_gateway_resource.proxy,
+      aws_api_gateway_method.default,
+      aws_api_gateway_integration.default,
     ]))
   }
 
@@ -247,7 +252,7 @@ resource "aws_api_gateway_deployment" "default" {
   }
 }
 
-# Stage explcitly managed 
+# Stage explicitly managed 
 resource "aws_api_gateway_stage" "default" {
   stage_name    = "prd"
   rest_api_id   = aws_api_gateway_rest_api.default.id
