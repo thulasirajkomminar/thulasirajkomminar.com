@@ -3,3 +3,10 @@
 {% block extra_head %}
     <script defer src="https://cloud.umami.is/script.js" data-website-id="63b228ec-1a9b-4ef3-8fc5-55cbdf34960c"></script>
 {% endblock %}
+
+{% block extra_body %}
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+{% endblock %}
