@@ -43,7 +43,7 @@ paginate_by = 5
 # Enable search bar 
 enable_search = true
 
-accent_color = "red-auto"
+accent_color = "blue-auto"
 background_color = "dark"
 logo_text = "Thulasiraj Komminar | AWS • Terraform • Programming"
 author = "Thulasiraj Komminar"
