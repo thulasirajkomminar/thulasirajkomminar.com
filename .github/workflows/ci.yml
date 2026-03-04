@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+
+jobs:
+  build:
+    name: Code standards & build
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    steps:
+      - name: "☁️ Checkout repository"
+        uses: actions/checkout@v6
+
+      - name: "🚀 Build the project"
+        uses: shalzz/zola-deploy-action@v0.22.1
+        env:
+          BUILD_ONLY: true
+          BUILD_FLAGS: --drafts

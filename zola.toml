@@ -1,0 +1,69 @@
+# The URL the site will be built for
+base_url = "https://www.thulasirajkomminar.com"
+title = "Thulasiraj Komminar"
+description = "AWS • Terraform • Programming"
+
+# Default language
+default_language = "en"
+
+# The theme the site will be built with
+theme = "terminimal"
+
+# RSS
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+# When set to "false", Sitemap.xml is not generated
+generate_sitemap = true
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[search]
+index_format = "elasticlunr_json"
+include_title = true
+include_description = true
+include_content = true
+
+[extra]
+paginate_by = 5
+
+# Enable search bar 
+enable_search = true
+
+accent_color = "red-auto"
+background_color = "dark"
+logo_text = "Thulasiraj Komminar | AWS • Terraform • Programming"
+author = "Thulasiraj Komminar"
+
+menu_items = [
+  { name = "Home", url = "$BASE_URL" },
+  { name = "About Me", url = "$BASE_URL/pages/about-me" },
+  { name = "RSS", url = "$BASE_URL/rss.xml" },
+]
+
+# Whether to show links to earlier and later posts
+# on each post page (defaults to true).
+enable_post_view_navigation = true
+
+# The text shown at the bottom of a post,
+# before earlier/later post links.
+# Defaults to "Thanks for reading! Read other posts?"
+post_view_navigation_prompt = "Thanks for reading! 💡 Want more? [Check out my other posts →]"
+
+use_full_hack_font = true
+
+favicon = "favicon/TK.png"
+favicon_mimetype = "image/png"

@@ -1,0 +1,28 @@
+/* Base link styling for main content areas */
+.post-content a,
+.post-title a,
+.read-more,
+.pagination .button a {
+  color: var(--accent);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-alpha-70);
+    text-decoration: underline;
+  }
+}
+
+/* Exclusions (reset them if needed) */
+.menu a,
+.post-tag,
+.header__logo a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-alpha-70);
+    text-decoration: underline;
+  }
+}
