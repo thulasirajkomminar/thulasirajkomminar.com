@@ -9,9 +9,9 @@ tags = ["aws", "api", "gateway", "terraform", "rest-api", "provider", "v6", "ref
 
 Initially when we first designed our AWS API Gateway setup, the goal was simple, one custom domain, one REST API, and a top-level path-based routing strategy to serve multiple teams. It worked. Teams were onboarded quickly, routing was predictable, and the Terraform was easy to understand. For a while, it was the right call.
 
-Then the HashiCorp AWS Terraform provider v6 landed and with it, the removal of `stage_name` from `aws_api_gateway_deployment`. What started as a migration task turned into something more valuable, a forcing function to rethink our architecture from the ground up and give each team ownership of their own API.
-
 <!-- more -->
+
+Then the HashiCorp AWS Terraform provider v6 landed and with it, the removal of `stage_name` from `aws_api_gateway_deployment`. What started as a migration task turned into something more valuable, a forcing function to rethink our architecture from the ground up and give each team ownership of their own API.
 
 <center>
 <img src="/images/15_terraform_aws_provider_v6_redesigning_api_gateway_for_multi_team_ownership/1.png" style="width: 100%"/>
