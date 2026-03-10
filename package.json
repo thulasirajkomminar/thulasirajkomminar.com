@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@vercel/analytics": "^1.6.1",
-    "@vercel/speed-insights": "^1.1.0"
+    "@vercel/analytics": "^2.0.0",
+    "@vercel/speed-insights": "^2.0.0"
   }
 }
