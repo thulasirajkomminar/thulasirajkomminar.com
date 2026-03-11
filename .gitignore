@@ -1,5 +1,4 @@
 public/
-**/.vscode/
 .vercel
 !**/parts/
 zola

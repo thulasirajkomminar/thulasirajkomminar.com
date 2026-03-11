@@ -31,7 +31,7 @@ Redshift federated query lets you query and analyse data across multiple operati
 # Architecture
 
 <center>
-<img src="/images/redshift-federated-query-with-aurora-mysql/1.webp" style="width: 100%"/>
+<img src="/images/01_redshift-federated-query-with-aurora-mysql/1.webp" style="width: 100%"/>
 </center>
 <br>
 

@@ -12,7 +12,7 @@ Attending AWS re:Invent is always a highlight for me, and this year’s session,
 <!-- more -->
 
 <center>
-<img src="/images/understanding-aws-lambda-event-source-mapping/1.png" style="width: 100%"/>
+<img src="/images/14_understanding-aws-lambda-event-source-mapping/1.png" style="width: 100%"/>
 </center>
 <br>
 
@@ -29,6 +29,7 @@ Attending AWS re:Invent is always a highlight for me, and this year’s session,
 - [Scaling Challenges: Balancing Upstream and Downstream Loads](#scaling-challenges-balancing-upstream-and-downstream-loads)
 - [Best Practices: Building Robust Event-Driven Systems](#best-practices-building-robust-event-driven-systems)
 - [Final Thoughts](#final-thoughts)
+- [References](#references)
   
 <!-- vim-markdown-toc -->
 

@@ -15,7 +15,7 @@ Ever since the private preview of Terraform Stacks, I’ve been eager to dive in
 In this blog, I’ll walk you through the essentials of Terraform Stacks configurations and demonstrate how to deploy a REST API as an S3 proxy using API Gateway.
 
 <center>
-<img src="/images/terraform-stacks/1.png" style="width: 70%"/>
+<img src="/images/13_terraform-stacks/1.png" style="width: 70%"/>
 </center>
 <br>
 
@@ -346,12 +346,12 @@ orchestrate "replan" "prod_for_errors" {
 A new configuration is created every time code is merged into `main` branch, and a new plan to apply those code changes is created for each of your deployments.
 
 <center>
-<img src="/images/terraform-stacks/2.png" style="width: 90%"/>
+<img src="/images/13_terraform-stacks/2.png" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/terraform-stacks/3.png" style="width: 90%"/>
+<img src="/images/13_terraform-stacks/3.png" style="width: 90%"/>
 </center>
 <br>
 

@@ -17,7 +17,7 @@ Integrating Redshift Query Editor v2 with your identity provider (IdP) automatic
 In this blog post, we’ll focus on using [Okta](https://www.okta.com/) as the IdP and guide you through configuring your Okta application and AWS IAM permissions. We’ll also demonstrate how to restrict user access to only the Query Editor v2, preventing them from performing administrative functions on the AWS Management Console.
 
 <center>
-<img src="/images/streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform/1.webp" style="width: 100%"/>
+<img src="/images/10_streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform/1.webp" style="width: 100%"/>
 </center>
 <br>
 

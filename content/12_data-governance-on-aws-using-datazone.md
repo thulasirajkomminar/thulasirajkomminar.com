@@ -105,7 +105,7 @@ Now that we’ve explored the fundamentals of data governance and the key concep
 ## Architecture
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/1.webp" style="width: 120%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/1.webp" style="width: 120%"/>
 </center>
 <br>
 
@@ -125,7 +125,7 @@ To begin setting up a Data Marketplace, the first step is to create a domain.
 - Click on the Create domain button.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/2.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/2.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -135,14 +135,14 @@ To begin setting up a Data Marketplace, the first step is to create a domain.
   - **Service access:** DataZone will create a new service role for you if there is no suitable role exists in your AWS account. This role includes necessary permissions that authorize DataZone to make API calls on behalf of users within the domain.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/3.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/3.webp" style="width: 70%"/>
 </center>
 <br>
 
 - **Quick set up:** Select this option as it automatically creates required service roles and S3 bucket required for DataZone.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/4.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/4.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -156,7 +156,7 @@ Associating your AWS accounts with DataZone domains enables you to publish data 
 - Enter the Producer account id and click Request association. Repeat this step to associate the Consumer account.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/5.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/5.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -167,7 +167,7 @@ Projects enable a group of users to collaborate on various business use cases th
 - Log in to the Data Portal and navigate to the Create Project option. Enter a name for your project and click Create. Repeat this process to create the Consumer project as well.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/6.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/6.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -184,7 +184,7 @@ In our setup, we will create two environments: one for Athena (linked with S3) a
 - Log in to the Data Portal, select the Producer project, and then navigate to the Environments tab. Click on Create Environment to proceed.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/7.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/7.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -192,7 +192,7 @@ In our setup, we will create two environments: one for Athena (linked with S3) a
 - Enter a name for the environment, select DataLakeProfile as the environment profile, and click Create Environment.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/8.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/8.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -201,21 +201,21 @@ In our setup, we will create two environments: one for Athena (linked with S3) a
 - Navigate to the Environments tab and click Create Environment Profile. Enter a name for the profile and select Default Data Warehouse as the blueprint.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/9.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/9.webp" style="width: 70%"/>
 </center>
 <br>
 
 - Under the Parameter set section, select the parameter set you created earlier.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/10.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/10.webp" style="width: 70%"/>
 </center>
 <br>
 
 - Click Create Environment Profile to complete the setup.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/11.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/11.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -234,7 +234,7 @@ Parameter set is a group of keys and values, required for DataZone to establish 
 - Click on the Default Data Warehouse blueprints and under the Parameter sets click Create parameter set. Enter the name, description and choose the region.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/12.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/12.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -245,7 +245,7 @@ Parameter set is a group of keys and values, required for DataZone to establish 
 >**Note:** Make sure the Redshift Manage Access Role has permissions to read the secret.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/13.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/13.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -266,21 +266,21 @@ With the projects and environments now created, we can proceed to import existin
 - Enter a name for the data source, select AWS Glue as the type (since the claims data is stored in S3), and choose the environment you just created.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/14.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/14.webp" style="width: 70%"/>
 </center>
 <br>
 
 - Enter the name of the Glue database, then proceed through the subsequent tabs with the default settings. Click Create to finalize the setup.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/15.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/15.webp" style="width: 70%"/>
 </center>
 <br>
 
 - Once the Data Source is created, initiate it to allow DataZone to import the Glue catalog into the Data Portal. After the process completes, you will see the imported asset in the portal.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/16.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/16.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -291,7 +291,7 @@ With the projects and environments now created, we can proceed to import existin
 - If needed, you can create and attach Business Glossary terms to the data asset. Once everything is in place, click Publish Asset to make the data asset available for consumption.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/17.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/17.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -300,14 +300,14 @@ With the projects and environments now created, we can proceed to import existin
 - Navigate to the Data Sources tab, create a new data source and choose Amazon Redshift as the type.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/18.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/18.webp" style="width: 70%"/>
 </center>
 <br>
 
 - Click Next, enter the appropriate schema name, and leave the remaining settings as default. Click Create and then run the data source. Once the run is complete, you should see the imported asset. Click on the asset and then select Publish to finalize the process.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/19.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/19.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -324,19 +324,19 @@ Data Consumer searches for data and discovers the data needed for the business u
 - Use the search bar to locate the claims data and click Subscribe.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/20.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/20.webp" style="width: 70%"/>
 </center>
 <br>
 
 - Navigate to the Producer project, where a notification for the subscription request should appear. Click View Request to review the details and approve it. You can choose to grant full access to the data or apply column/row filters as needed.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/21.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/21.webp" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/22.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/22.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -345,19 +345,19 @@ Data Consumer searches for data and discovers the data needed for the business u
 - Return to the Consumer project, where you should now see the subscribed asset listed.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/23.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/23.webp" style="width: 70%"/>
 </center>
 <br>
 
 - Click on the subscribed asset, then go to the My Subscription tab and select Query Data to view the data.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/24.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/24.webp" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/25.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/25.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -368,7 +368,7 @@ Data Consumer searches for data and discovers the data needed for the business u
 - Repeat the process to search for and subscribe to the customer data. Switch back to the Producer project to approve the request. Once approved, DataZone will add the asset to the existing environment.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/26.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/26.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -377,14 +377,14 @@ Data Consumer searches for data and discovers the data needed for the business u
 - Click Query Data to run queries on the Customer data in Redshift.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/27.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/27.webp" style="width: 70%"/>
 </center>
 <br>
 
 - For authentication, select Federated User and use dev for the database. You should see a datazone\_\* schema with a view created under that schema.
 
 <center>
-<img src="/images/data-governance-on-aws-using-datazone/28.webp" style="width: 70%"/>
+<img src="/images/12_data-governance-on-aws-using-datazone/28.webp" style="width: 70%"/>
 </center>
 <br>
 

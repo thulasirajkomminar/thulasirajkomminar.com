@@ -37,7 +37,7 @@ In this guide, we will discuss the consumption cross-account access, enable cros
 # Architecture
 
 <center>
-<img src="/images/lake-formation-cross-account-access-using-terraform/1.webp" style="width: 100%"/>
+<img src="/images/02_lake-formation-cross-account-access-using-terraform/1.webp" style="width: 100%"/>
 </center>
 <br>
 

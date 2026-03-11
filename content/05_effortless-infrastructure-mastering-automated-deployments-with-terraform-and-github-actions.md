@@ -13,7 +13,7 @@ In the earlier [blog post](https://www.thulasirajkomminar.com/efficient-continuo
 <!-- more -->
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/1.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/1.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -51,7 +51,7 @@ The GitHub Action you’re about to set up will seamlessly integrate with Terraf
 To kickstart the process, initiate a new Terraform Cloud workspace. Navigate to the Projects & Workspaces page, click on _New Workspace_, and opt for the _API-Driven Workflow_ option.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/2.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/2.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -60,7 +60,7 @@ To kickstart the process, initiate a new Terraform Cloud workspace. Navigate to 
 Provide a name for the workspace and proceed by clicking on the _Create_ button.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/3.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/3.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -69,7 +69,7 @@ Provide a name for the workspace and proceed by clicking on the _Create_ button.
 Now, it’s time to include your AWS IAM credentials as environmental variables (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_DEFAULT_REGION`) within the workspace. Navigate to the _Variables_ section in the workspace, click on _Add Variable_, and select _Environment variable_ as the variable category. Terraform Cloud will use these credentials to authenticate to AWS.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/4.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/4.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -78,7 +78,7 @@ Now, it’s time to include your AWS IAM credentials as environmental variables 
 Now, let’s generate an API token to enable authentication for the Actions workflow in Terraform Cloud. Head to the Tokens page within your Terraform Cloud User Settings. Click on Create an _API token_, provide a description, and then click _Generate token_.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/5.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/5.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -91,7 +91,7 @@ Establish a GitHub repository dedicated to housing your infrastructure configura
 Once you’ve created the repository, proceed to the Settings page. Access the _Secrets and Variables_ menu, specifically selecting Actions. Click _New Repository Secret_ and input the Terraform API token generated in the previous step.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/6.jpg" style="width: 100%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/6.jpg" style="width: 100%"/>
 </center>
 <br>
 
@@ -287,17 +287,17 @@ Now, let’s put our setup into action. For demonstration purposes, I’ve inclu
 After incorporating the Terraform configuration files into a `feature` branch, let’s create a pull request to the `main` branch. This action will initiate GitHub Actions to execute Validation and Plan, with the results seamlessly added back to the pull request for convenient review.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/7.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/7.webp" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/8.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/8.webp" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/9.jpg" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/9.jpg" style="width: 70%"/>
 </center>
 <br>
 
@@ -306,12 +306,12 @@ After incorporating the Terraform configuration files into a `feature` branch, l
 After a thorough review of the pull request and ensuring the Terraform plan results meet expectations, proceed to merge the pull request. This will trigger the Terraform apply process.
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/10.jpg" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/10.jpg" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/11.webp" style="width: 70%"/>
+<img src="/images/05_effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions/11.webp" style="width: 70%"/>
 </center>
 <br>
 

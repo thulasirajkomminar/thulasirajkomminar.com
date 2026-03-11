@@ -1,6 +1,6 @@
 +++
 title = "From Zero to Fargate: Running Containerized Apps with Aurora on AWS"
-slug = "from_zero_to_fargate_running_containerized_apps_with_aurora_on_aws"
+slug = "from-zero-to-fargate-running-containerized-apps-with-aurora-on-aws"
 date = 2026-03-04
 
 [taxonomies]
@@ -45,7 +45,7 @@ By the end of this guide you'll have a fully working GoAlert deployment, with SS
 Route 53 → ALB (HTTPS) → Fargate (GoAlert) → Aurora Serverless v2 (PostgreSQL 17)
 
 <center>
-<img src="/images/16_from_zero_to_fargate_running_containerized_apps_with_aurora_on_aws/1.png" style="width: 100%"/>
+<img src="/images/16_from-zero-to-fargate-running-containerized-apps-with-aurora-on-aws/1.png" style="width: 100%"/>
 </center>
 <br>
 

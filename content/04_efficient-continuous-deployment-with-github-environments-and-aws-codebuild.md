@@ -58,28 +58,28 @@ First, we’ll establish the `development` and `production` environments and imp
 Navigate to the repository where you intend to set up the Continuous Deployment (CD). Click on _Settings_, and then select _Environments_ from the sidebar. To add environments, simply click on the _New Environment_ button. As depicted in the image below, I have established two environments.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/1.jpg" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/1.jpg" style="width: 70%"/>
 </center>
 <br>
 
 After adding an environment, you’ll be prompted to configure its settings. Let’s dive into that. We’ll start by setting up a protection rule for the `production` environment. As illustrated below, I’ve added a required reviewer to manually approve all deployments headed to `production`.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/2.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/2.webp" style="width: 70%"/>
 </center>
 <br>
 
 Next, we’ll restrict deployments to this environment based on specific branch naming patterns. As demonstrated below, I selected the _Selected branches and tags rule_. Click on _Add deployment branch or tag rule_, and in the subsequent popup, select _Ref type_ as branch and enter `main` for the _Name pattern_.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/3.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/3.webp" style="width: 70%"/>
 </center>
 <br>
 
 To deploy to an AWS account, we require the AWS account ID and region. Therefore, I’ve added these as environment secrets, along with a variable to capture the environment name.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/4.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/4.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -274,12 +274,12 @@ Now, head over to the CodeBuild service and select _Create build project_. Speci
 Apply the following Environment settings, and select the role you previously created.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/5.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/5.webp" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/6.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/6.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -307,17 +307,17 @@ Alright, now that we’ve configured everything on both the GitHub and AWS sides
 After pushing a change directly to the `develop` branch, it promptly initiated a deployment to the development environment. The deployment was successful, and you can view the corresponding CodeBuild logs within the Actions.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/7.jpg" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/7.jpg" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/8.jpg" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/8.jpg" style="width: 70%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/9.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/9.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -328,28 +328,28 @@ With the successful deployment to the `development` environment, let’s now cre
 As depicted below, the pull request to `main` displays the status of the deployment to `development`. You can enforce this deployment check as mandatory in the branch protection rules for added reliability.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/10.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/10.webp" style="width: 70%"/>
 </center>
 <br>
 
 Now, proceed to merge this pull request. The deployment to the `production` environment will pause and await manual approval, as we’ve included reviewers as a protection rule in the `production` environment.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/11.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/11.webp" style="width: 70%"/>
 </center>
 <br>
 
 Alright, after a thorough manual review of the changes 😊, let’s proceed with approving this deployment. To do so, click on _Review deployments_, select the `production` environment, and then click on _Approve and deploy_.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/12.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/12.webp" style="width: 70%"/>
 </center>
 <br>
 
 With the approval in place, the `production` deployment process is now initiated.
 
 <center>
-<img src="/images/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/13.webp" style="width: 70%"/>
+<img src="/images/04_efficient-continuous-deployment-with-github-environments-and-aws-codebuild/13.webp" style="width: 70%"/>
 </center>
 <br>
 

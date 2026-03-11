@@ -14,7 +14,7 @@ Initially when we first designed our AWS API Gateway setup, the goal was simple,
 Then the HashiCorp AWS Terraform provider v6 landed and with it, the removal of `stage_name` from `aws_api_gateway_deployment`. What started as a migration task turned into something more valuable, a forcing function to rethink our architecture from the ground up and give each team ownership of their own API.
 
 <center>
-<img src="/images/15_terraform_aws_provider_v6_redesigning_api_gateway_for_multi_team_ownership/1.png" style="width: 100%"/>
+<img src="/images/15_terraform-aws-provider-v6-redesigning-api-gateway-for-multi-team-ownership/1.png" style="width: 100%"/>
 </center>
 <br>
 
@@ -30,6 +30,7 @@ Then the HashiCorp AWS Terraform provider v6 landed and with it, the removal of 
   - [Platform Team:](#platform-team)
   - [App Teams:](#app-teams)
 - [Final Thoughts](#final-thoughts)
+- [References](#references)
   
 <!-- vim-markdown-toc -->
 

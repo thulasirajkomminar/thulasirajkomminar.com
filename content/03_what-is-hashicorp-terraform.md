@@ -13,7 +13,7 @@ In this blog I will explain what is Terraform and some of its common terms. I wi
 <!-- more -->
 
 <center>
-<img src="/images/what-is-hashicorp-terraform/1.webp" style="width: 80%"/>
+<img src="/images/03_what-is-hashicorp-terraform/1.webp" style="width: 80%"/>
 </center>
 <br>
 
@@ -149,7 +149,7 @@ Performing the operations in the correct order by respecting resource dependenci
 Terraform supports HCL, JSON, CRDS and CDK. CDK allows you to use familiar programming languages to define and provision infrastructure. It also lets you leverage the power of your existing toolchain for testing, dependency management, etc. In this blog we will focus on HCL and how to configure Providers, Resources and Modules.
 
 <center>
-<img src="/images/what-is-hashicorp-terraform/2.webp" style="width: 90%"/>
+<img src="/images/03_what-is-hashicorp-terraform/2.webp" style="width: 90%"/>
 </center>
 <br>
 

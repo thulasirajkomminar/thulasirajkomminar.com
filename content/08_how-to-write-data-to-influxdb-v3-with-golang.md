@@ -13,7 +13,7 @@ In this blog post, we’ll delve into the process of writing data into InfluxDB 
 <!-- more -->
 
 <center>
-<img src="/images/how-to-write-data-to-influxdb-v3-with-golang/1.webp" style="width: 100%"/>
+<img src="/images/08_how-to-write-data-to-influxdb-v3-with-golang/1.webp" style="width: 100%"/>
 </center>
 <br>
 
@@ -62,7 +62,7 @@ go get github.com/InfluxCommunity/influxdb3-go
 With the influxdb3-go client, data can be provided in various formats such as [line protocol](https://docs.influxdata.com/influxdb/cloud-serverless/reference/syntax/line-protocol/), point, or as a struct. For this tutorial, we’ll opt for the annotated struct approach to ensure a fixed schema. This choice suits scenarios where maintaining a consistent schema is crucial. However, if your use case involves handling dynamic schemas, other options like line protocol or point may be more suitable.
 
 <center>
-<img src="/images/how-to-write-data-to-influxdb-v3-with-golang/2.png" style="width: 90%"/>
+<img src="/images/08_how-to-write-data-to-influxdb-v3-with-golang/2.png" style="width: 90%"/>
 </center>
 <br>
 
@@ -75,7 +75,7 @@ go get github.com/caarlos0/env/v11
 ```
 
 <center>
-<img src="/images/how-to-write-data-to-influxdb-v3-with-golang/3.png" style="width: 90%"/>
+<img src="/images/08_how-to-write-data-to-influxdb-v3-with-golang/3.png" style="width: 90%"/>
 </center>
 <br>
 
@@ -84,7 +84,7 @@ go get github.com/caarlos0/env/v11
 After loading the credentials, the next step is to create a function that instantiates the InfluxDB client. We’ll define a NewClient() function responsible for this task, utilizing the configuration struct previously defined. This function ensures seamless creation of the client with the provided configuration.
 
 <center>
-<img src="/images/how-to-write-data-to-influxdb-v3-with-golang/4.png" style="width: 90%"/>
+<img src="/images/08_how-to-write-data-to-influxdb-v3-with-golang/4.png" style="width: 90%"/>
 </center>
 <br>
 
@@ -93,7 +93,7 @@ After loading the credentials, the next step is to create a function that instan
 After setting up the InfluxDB client instantiation, the next step is to implement a function for batch writing data to InfluxDB v3. We’ll create a function named BatchWrite() responsible for this task. This function will take a slice of annotated Measurement structs and convert them into an []interface{} format, facilitating batch writing to InfluxDB v3.
 
 <center>
-<img src="/images/how-to-write-data-to-influxdb-v3-with-golang/5.png" style="width: 90%"/>
+<img src="/images/08_how-to-write-data-to-influxdb-v3-with-golang/5.png" style="width: 90%"/>
 </center>
 <br>
 
@@ -102,14 +102,14 @@ After setting up the InfluxDB client instantiation, the next step is to implemen
 With all the required functions in place, we are now ready to instantiate the client and write a slice of data to InfluxDB v3. First, we’ll initialize the client using the configuration obtained from environment variables. Then, we’ll utilize the BatchWrite() function to efficiently write the data as a batch to InfluxDB.
 
 <center>
-<img src="/images/how-to-write-data-to-influxdb-v3-with-golang/6.png" style="width: 80%"/>
+<img src="/images/08_how-to-write-data-to-influxdb-v3-with-golang/6.png" style="width: 80%"/>
 </center>
 <br>
 
 # Exploring Data
 
 <center>
-<img src="/images/how-to-write-data-to-influxdb-v3-with-golang/7.webp" style="width: 100%"/>
+<img src="/images/08_how-to-write-data-to-influxdb-v3-with-golang/7.webp" style="width: 100%"/>
 </center>
 <br>
 

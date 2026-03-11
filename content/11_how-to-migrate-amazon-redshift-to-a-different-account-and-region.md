@@ -36,7 +36,7 @@ Moving Amazon Redshift to a new account and region might seem difficult, but it 
 # Architecture
 
 <center>
-<img src="/images/how-to-migrate-amazon-redshift-to-a-different-account-and-region/1.webp" style="width: 120%"/>
+<img src="/images/11_how-to-migrate-amazon-redshift-to-a-different-account-and-region/1.webp" style="width: 120%"/>
 </center>
 <br>
 
@@ -54,7 +54,7 @@ To move the cluster to a different region in a different account, you first need
 4. Click Save.
 
 <center>
-<img src="/images/how-to-migrate-amazon-redshift-to-a-different-account-and-region/2.webp" style="width: 50%"/>
+<img src="/images/11_how-to-migrate-amazon-redshift-to-a-different-account-and-region/2.webp" style="width: 50%"/>
 </center>
 <br>
 
@@ -69,7 +69,7 @@ To share a cluster snapshot with another AWS account, you need a manual snapshot
 Since we configured the cross-region snapshot in the previous step, creating a snapshot now will also copy it to the destination region.
 
 <center>
-<img src="/images/how-to-migrate-amazon-redshift-to-a-different-account-and-region/3.webp" style="width: 50%"/>
+<img src="/images/11_how-to-migrate-amazon-redshift-to-a-different-account-and-region/3.webp" style="width: 50%"/>
 </center>
 <br>
 
@@ -100,7 +100,7 @@ When you share an encrypted snapshot, you also need to share the KMS key that wa
 Navigate to Snapshots, find the manual snapshot you created, and click on it. Under Snapshot access, click on edit. Enter the TargetAccount ID and click Add account. Once you’re done, click Save. Now, the snapshot will be accessible in the TargetAccount and the destination region..
 
 <center>
-<img src="/images/how-to-migrate-amazon-redshift-to-a-different-account-and-region/4.webp" style="width: 50%"/>
+<img src="/images/11_how-to-migrate-amazon-redshift-to-a-different-account-and-region/4.webp" style="width: 50%"/>
 </center>
 <br>
 

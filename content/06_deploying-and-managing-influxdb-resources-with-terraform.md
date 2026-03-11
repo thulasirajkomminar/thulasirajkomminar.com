@@ -15,7 +15,7 @@ Terraform is a powerful infrastructure as code tool that automates cloud infrast
 InfluxDB is a specialized time-series database tailored for efficiently handling large volumes of time-stamped data. In this blog, we’ll explore how to leverage Terraform for provisioning and managing resources within InfluxDB.
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/1.webp" style="width: 120%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/1.webp" style="width: 120%"/>
 </center>
 <br>
 
@@ -118,12 +118,12 @@ resource "influxdb_organization" "iot" {
 After running a Terraform plan and verifying everything looks good, let’s proceed with applying the changes.
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/2.webp" style="width: 90%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/2.webp" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/3.webp" style="width: 70%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/3.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -143,12 +143,12 @@ resource "influxdb_bucket" "signals" {
 ```
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/4.webp" style="width: 90%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/4.webp" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/5.webp" style="width: 70%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/5.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -183,12 +183,12 @@ resource "influxdb_authorization" "signals_rw" {
 ```
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/6.webp" style="width: 90%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/6.webp" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/7.webp" style="width: 70%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/7.webp" style="width: 70%"/>
 </center>
 <br>
 
@@ -217,7 +217,7 @@ output "signals_bucket" {
 ```
 
 <center>
-<img src="/images/deploying-and-managing-influxdb-resources-with-terraform/8.webp" style="width: 90%"/>
+<img src="/images/06_deploying-and-managing-influxdb-resources-with-terraform/8.webp" style="width: 90%"/>
 </center>
 <br>
 

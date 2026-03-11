@@ -13,7 +13,7 @@ In this blog post, we’ll delve into the process of creating a Pulumi Resource 
 <!-- more -->
 
 <center>
-<img src="/images/how-to-bridge-a-terraform-provider-to-pulumi/1.webp" style="width: 100%"/>
+<img src="/images/07_how-to-bridge-a-terraform-provider-to-pulumi/1.webp" style="width: 100%"/>
 </center>
 <br>
 
@@ -515,19 +515,19 @@ bucket = influxdb.Bucket(
 Next, execute the `pulumi preview` command to view a preview of the updates to an existing stack. Follow this by running `pulumi up` to either create or update the resources within the stack.
 
 <center>
-<img src="/images/how-to-bridge-a-terraform-provider-to-pulumi/2.webp" style="width: 90%"/>
+<img src="/images/07_how-to-bridge-a-terraform-provider-to-pulumi/2.webp" style="width: 90%"/>
 </center>
 <br>
 
 <center>
-<img src="/images/how-to-bridge-a-terraform-provider-to-pulumi/3.webp" style="width: 90%"/>
+<img src="/images/07_how-to-bridge-a-terraform-provider-to-pulumi/3.webp" style="width: 90%"/>
 </center>
 <br>
 
 You can also view the stacks in Pulumi cloud.
 
 <center>
-<img src="/images/how-to-bridge-a-terraform-provider-to-pulumi/4.webp" style="width: 80%"/>
+<img src="/images/07_how-to-bridge-a-terraform-provider-to-pulumi/4.webp" style="width: 80%"/>
 </center>
 <br>
 
