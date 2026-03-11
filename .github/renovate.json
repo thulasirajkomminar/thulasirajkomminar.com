@@ -7,7 +7,7 @@
   ],
   "timezone": "Europe/Amsterdam",
   "schedule": [
-    "before 9am every week"
+    "before 9am on monday"
   ],
   "prConcurrentLimit": 3,
   "automerge": false,
