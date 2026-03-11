@@ -1,0 +1,75 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommits"
+  ],
+  "timezone": "Europe/Amsterdam",
+  "schedule": [
+    "before 9am every week"
+  ],
+  "prConcurrentLimit": 3,
+  "automerge": false,
+  "labels": [
+    "dependencies"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Zola version in vercel.json install command",
+      "fileMatch": [
+        "(^|/)vercel\\.json$"
+      ],
+      "matchStrings": [
+        "getzola/zola/releases/download/v(?<currentValue>[^/]+)/zola-v"
+      ],
+      "depNameTemplate": "getzola/zola",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    }
+  ],
+  "packageRules": [
+    {
+      "description": "Group all GitHub Actions updates",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "GitHub Actions",
+      "pinDigests": true
+    },
+    {
+      "description": "Zola deploy action — check release notes for theme compat",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackageNames": [
+        "shalzz/zola-deploy-action"
+      ],
+      "groupName": "Zola",
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Zola version in vercel.json — group with deploy action",
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "matchPackageNames": [
+        "getzola/zola"
+      ],
+      "groupName": "Zola",
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "npm deps — group non-major updates",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "npm tooling (non-major)"
+    }
+  ]
+}
