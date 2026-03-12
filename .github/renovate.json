@@ -18,8 +18,8 @@
     {
       "customType": "regex",
       "description": "Zola version in vercel.json install command",
-      "fileMatch": [
-        "(^|/)vercel\\.json$"
+      "managerFilePatterns": [
+        "/(^|/)vercel\\.json$/"
       ],
       "matchStrings": [
         "getzola/zola/releases/download/v(?<currentValue>[^/]+)/zola-v"
