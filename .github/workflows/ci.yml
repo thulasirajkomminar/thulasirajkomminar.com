@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: "🚀 Build the project"
-        uses: shalzz/zola-deploy-action@v0.22.1
+        uses: shalzz/zola-deploy-action@74526e63f38f84b82476349bbcd886b82040ff98 # v0.22.1
         env:
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
