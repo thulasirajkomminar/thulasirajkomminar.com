@@ -26,12 +26,13 @@ slug = "about-me"
   <a href="https://www.linkedin.com/in/thulasirajkomminar/"><img src="https://skills.syvixor.com/api/icons?i=linkedin" /></a>
   <a href="https://x.com/TKomminar"><img src="https://skills.syvixor.com/api/icons?i=x" /></a>
   <a href="https://www.instagram.com/thulasiraj_komminar"><img src="https://skills.syvixor.com/api/icons?i=instagram" /></a>
+  <a href="https://letterboxd.com/tkomminar/"> <img src="https://a.ltrbxd.com/logos/letterboxd-mac-icon.png" width="60" /></a>
 </span>
 
 ## Experience
 
 <h3>Mission Critical Engineer -&nbsp;<a href="https://schubergphilis.com/en">Schuberg Philis</a>&nbsp;- Amsterdam</h3>
-<p align="right"><i>Aug 2019 - Present · 6 yrs 8 mos</i></p>
+<p align="right"><i>Aug 2019 - Present · 6 yrs 9 mos</i></p>
 
 Helping HEINEKEN in becoming the best Connected Brewer by elevating standards in sustainability and responsibility, while unleashing the untapped potential of its workforce.
 
