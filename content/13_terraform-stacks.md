@@ -5,7 +5,7 @@ date = 2024-10-30
 aliases = ["/posts/terraform-stacks"]
 
 [taxonomies]
-tags = ["aws", "terraform", "stacks", "iac", "infrastructure", "platform", "automation", "hashicorp"]
+tags = ["aws", "terraform", "stacks", "iac", "infrastructure as code", "platform engineering", "hashicorp"]
 +++
 
 Ever since the private preview of Terraform Stacks, I’ve been eager to dive in and explore this new approach to provisioning infrastructure. After a year in private preview, the public beta was finally announced at HashiConf 2024, and I’m excited to share my experience!

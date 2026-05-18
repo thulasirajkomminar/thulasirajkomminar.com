@@ -5,7 +5,7 @@ date = 2024-01-26
 aliases = ["/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions-c98d057f1a08", "/posts/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions", "/aws-tip/effortless-infrastructure-mastering-automated-deployments-with-terraform-and-github-actions-c98d057f1a08"]
 
 [taxonomies]
-tags = ["cicd", "github", "actions", "codebuild", "aws", "continuous-deployment", "environments", "deployment", "aws", "terraform"]
+tags = ["cicd", "github actions", "codebuild", "aws", "continuous deployment", "aws", "terraform"]
 +++
 
 In the earlier [blog post](https://www.thulasirajkomminar.com/efficient-continuous-deployment-with-github-environments-and-aws-codebuild/), I showcased the steps to achieve continuous deployment using GitHub Actions and AWS CodeBuild specifically for code deployment. Expanding on those principles, let’s delve into the next phase of our workflow — incorporating infrastructure deployment through Terraform.

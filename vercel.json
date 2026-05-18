@@ -1,6 +1,6 @@
 {
     "framework": null,
     "installCommand": "curl -fsSL https://github.com/getzola/zola/releases/download/v0.22.1/zola-v0.22.1-x86_64-unknown-linux-musl.tar.gz | tar -xz",
-    "buildCommand": "./zola build",
+    "buildCommand": "if [ \"$VERCEL_ENV\" = \"production\" ]; then ./zola build; else ./zola build --base-url \"https://$VERCEL_URL\"; fi",
     "outputDirectory": "public"
 }

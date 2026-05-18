@@ -5,7 +5,7 @@ date = 2021-10-15
 aliases = ["/redshift-federated-query-with-aurora-mysql-7de76dda8a1f", "/posts/redshift-federated-query-with-aurora-mysql"]
 
 [taxonomies]
-tags = ["aws", "redshift", "federation", "query", "federated-query", "mysql"]
+tags = ["aws", "redshift", "federated queries"]
 +++
 
 Redshift federated query lets you query and analyse data across multiple operational databases directly. In this blog I have explained how to setup Redshift to query across multiple Aurora instances cross-account.

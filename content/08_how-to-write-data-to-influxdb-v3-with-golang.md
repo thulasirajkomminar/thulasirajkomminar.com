@@ -5,7 +5,7 @@ date = 2024-05-14
 aliases = ["/how-to-write-data-to-influxdb-v3-with-golang-a-step-by-step-tutorial-f32b0d3ea930", "/posts/how-to-write-data-to-influxdb-v3-with-golang"]
 
 [taxonomies]
-tags = ["influxdb", "v3", "iiot", "manufacturing", "iot"]
+tags = ["influxdb", "iiot", "manufacturing", "iot"]
 +++
 
 In this blog post, we’ll delve into the process of writing data into InfluxDB v3 using Go. Our focus will be on harnessing the capabilities of the [influxdb3-go client library](https://github.com/InfluxCommunity/influxdb3-go/tree/main), particularly its support for annotated structs. Through a practical example, we’ll demonstrate how to convert a slice into a structured format and efficiently batch write it into InfluxDB.

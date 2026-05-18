@@ -5,7 +5,7 @@ date = 2024-03-16
 aliases = ["/how-to-bridge-a-terraform-provider-to-pulumi-623db829f52f", "/posts/how-to-bridge-a-terraform-provider-to-pulumi"]
 
 [taxonomies]
-tags = ["terraform", "pulumi", "provider", "bridge", "iot", "iac"]
+tags = ["terraform", "pulumi", "provider", "iac"]
 +++
 
 In this blog post, we’ll delve into the process of creating a Pulumi Resource provider sourced from a Terraform Provider developed with the Terraform Plugin Framework. Our focus will be on leveraging the [bridge package](https://github.com/pulumi/pulumi-terraform-bridge) to facilitate this transition seamlessly. To illustrate, we’ll demonstrate bridging the [InfluxDB Terraform provider](https://registry.terraform.io/providers/thulasirajkomminar/influxdb/latest) to Pulumi.

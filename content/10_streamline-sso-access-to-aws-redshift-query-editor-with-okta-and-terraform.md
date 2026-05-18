@@ -5,7 +5,7 @@ date = 2024-05-18
 aliases = ["/streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform-3abbecf347c3", "/posts/streamline-sso-access-to-aws-redshift-query-editor-with-okta-and-terraform/"]
 
 [taxonomies]
-tags = ["aws", "redshift", "okta", "terraform", "query-editor"]
+tags = ["aws", "redshift", "okta", "terraform", "query editor"]
 +++
 
 [AWS Redshift Query Editor v2](https://aws.amazon.com/redshift/query-editor-v2/) is a web-based tool that allows analysts to securely explore, share, and collaborate on data using SQL within a common notebook interface. It simplifies querying data with SQL and visualizing results with charts and graphs in just a few clicks.

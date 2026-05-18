@@ -1,35 +1,25 @@
-{% extends "terminimal/templates/page.html" %}
-{% import "terminimal/templates/macros/post.html" as post_macros %}
-
-{% block extra_head %}
-    <link rel="stylesheet" href="{{ get_url(path="custom.css") }}">
-{% endblock %}
+{% extends "zap/templates/page.html" %}
 
 {% block content %}
-    <div class="post">
-        {{ post_macros::header(page=page) }}
-        {{ post_macros::content(page=page, summary=false, show_only_description=false) }}
-        
-        {% if page.slug != "about-me" %}
+    {{ super() }}
+
+    {% if page.slug and page.slug != "about-me" and page.slug != "about" %}
         <!-- Giscus Comments -->
         <script
-          src="https://giscus.app/client.js"
-          data-repo="thulasirajkomminar/thulasirajkomminar.com"
-          data-repo-id="R_kgDOND_9_g"
-          data-category="Q&A"
-          data-category-id="DIC_kwDOND_9_s4Cjn6e"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="top"
-          data-theme="preferred_color_scheme"
-          data-lang="en"
-          crossorigin="anonymous"
-          async>
+            src="https://giscus.app/client.js"
+            data-repo="thulasirajkomminar/thulasirajkomminar.com"
+            data-repo-id="R_kgDOND_9_g"
+            data-category="Q&A"
+            data-category-id="DIC_kwDOND_9_s4Cjn6e"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
         </script>
-        {% endif %}
-        
-        {{ post_macros::earlier_later(page=page) }}
-    </div>
+    {% endif %}
 {% endblock content %}

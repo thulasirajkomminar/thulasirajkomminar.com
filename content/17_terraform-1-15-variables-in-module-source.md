@@ -4,7 +4,7 @@ slug = "terraform-1-15-variables-in-module-source"
 date = 2026-04-29
 
 [taxonomies]
-tags = ["terraform", "variables", "modules", "infrastructure-as-code", "iac", "hashicorp", "environments", "tfvars"]
+tags = ["terraform", "variables", "modules", "infrastructure as code", "iac", "hashicorp", "environments", "tfvars"]
 +++
 
 If you've been writing Terraform for any team that manages dev, staging, and prod, you already know what I'm about to say. This is a pain that most of us just accepted and moved on with.

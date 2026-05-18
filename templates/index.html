@@ -1,8 +1,42 @@
-{% extends "terminimal/templates/index.html" %}
+{% extends "base.html" %}
+{% import "zap/templates/macros/hooks.html" as hooks %}
 
-{% block extra_body %}
-    <script>
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
-{% endblock %}
+{% block content %}
+<article>{{ section.content | safe }}</article>
+
+{% if paginator %}
+  {% set show_pages = paginator.pages %}
+{% else %}
+  {% set show_pages = section.pages %}
+{% endif %}
+
+{% for year, posts in show_pages | group_by(attribute="year") %}
+<hr>
+<h2>{{ year }}</h2>
+<ul class="p">
+  {% for post in posts %}
+    {% if not post.draft and not post.extra.exclude_from_listings %}
+    <li>
+      <time datetime="{{ post.date }}">
+        <span>{{ post.date | date(format='%d') }}</span>
+        <span class="s">{{ post.date | date(format='%b') }}</span>
+      </time>
+      <div>
+        <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+        {{ hooks::posts_below_title(page=post) }}
+      </div>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endfor %}
+
+{% if paginator and (paginator.previous or paginator.next) %}
+<hr>
+<nav class="s" style="display:flex;justify-content:space-between;gap:1rem">
+  {% if paginator.previous %}<a href="{{ paginator.previous | safe }}">← Newer</a>{% else %}<span></span>{% endif %}
+  <span>Page {{ paginator.current_index }} / {{ paginator.number_pagers }}</span>
+  {% if paginator.next %}<a href="{{ paginator.next | safe }}">Older →</a>{% else %}<span></span>{% endif %}
+</nav>
+{% endif %}
+{% endblock content %}

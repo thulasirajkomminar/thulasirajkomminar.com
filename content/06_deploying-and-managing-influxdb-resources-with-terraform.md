@@ -5,7 +5,7 @@ date = 2024-02-15
 aliases = ["/deploying-and-managing-influxdb-resources-with-terraform-8f1c3c5be8ff", "/posts/deploying-and-managing-influxdb-resources-with-terraform"]
 
 [taxonomies]
-tags = ["terraform", "hashicorp", "iac", "infrastructure", "platform", "engineering", "influxdb", "iiot", "manufacturing", "timeseries", "database"]
+tags = ["terraform", "hashicorp", "iac", "infrastructure as code", "platform engineering", "influxdb", "iiot", "manufacturing", "timeseries", "database"]
 +++
 
 Terraform is a powerful infrastructure as code tool that automates cloud infrastructure provisioning and management through simple configuration files. If you’re interested in learning more, I’ve written a short blog outlining some key components of Terraform.

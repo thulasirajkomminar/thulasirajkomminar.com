@@ -5,7 +5,7 @@ date = 2022-09-15
 aliases = ["/lake-formation-cross-account-access-using-terraform-e21279e30531", "/posts/lake-formation-cross-account-access-using-terraform"]
 
 [taxonomies]
-tags = ["aws", "cross-account", "data-governance", "data-catalog", "glue", "lakeformation", "redshift", "athena", "s3", "datazone"]
+tags = ["aws", "cross-account", "data governance", "data catalog", "glue", "lakeformation", "redshift", "athena", "s3", "datazone"]
 +++
 
 There are two types of cross-account access

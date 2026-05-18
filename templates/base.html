@@ -1,0 +1,26 @@
+{% extends "zap/templates/base.html" %}
+
+{% block head_extra %}
+    {# Force dark mode site-wide and hide the toggle. #}
+    <style>
+        header .theme { display: none !important; }
+    </style>
+    <script>
+        (function () {
+            try { localStorage.setItem('theme', 'dk'); } catch (e) {}
+            document.documentElement.className = 'dk';
+            window.zb = function () {}; /* no-op the toggle */
+            var tc = document.getElementById('tc');
+            if (tc) tc.content = getComputedStyle(document.documentElement).getPropertyValue('--tc');
+        })();
+    </script>
+{% endblock head_extra %}
+
+{% block body_end %}
+    {{ super() }}
+    {# Vercel Speed Insights #}
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+{% endblock body_end %}
