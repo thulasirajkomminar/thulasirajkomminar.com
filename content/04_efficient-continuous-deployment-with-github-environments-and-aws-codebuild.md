@@ -5,7 +5,7 @@ date = 2023-10-30
 aliases = ["/efficient-continuous-deployment-with-github-environments-and-aws-codebuild-9086aef7d913", "/posts/efficient-continuous-deployment-with-github-environments-and-aws-codebuild"]
 
 [taxonomies]
-tags = ["cicd", "github", "actions", "codebuild", "aws", "continuous-deployment", "environments", "deployment"]
+tags = ["cicd", "github actions", "codebuild", "aws", "continuous deployment"]
 +++
 
 In this blog post, I’ll guide you through setting up a Continuous Deployment pipeline using GitHub Actions and environments, focusing on both `development` and `production` stages.

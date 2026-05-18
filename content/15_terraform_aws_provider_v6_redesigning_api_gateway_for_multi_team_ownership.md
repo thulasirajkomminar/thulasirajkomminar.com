@@ -4,7 +4,7 @@ slug = "terraform_aws_provider_v6_redesigning_api_gateway_for_multi_team_ownersh
 date = 2026-03-03
 
 [taxonomies]
-tags = ["aws", "api", "gateway", "terraform", "rest-api", "provider", "v6", "refactor", "multi-team", "ownership", "infrastructure-as-code"]
+tags = ["aws", "api gateway", "terraform", "rest-api", "provider", "v6", "multi team ownership", "infrastructure as code"]
 +++
 
 Initially when we first designed our AWS API Gateway setup, the goal was simple, one custom domain, one REST API, and a top-level path-based routing strategy to serve multiple teams. It worked. Teams were onboarded quickly, routing was predictable, and the Terraform was easy to understand. For a while, it was the right call.

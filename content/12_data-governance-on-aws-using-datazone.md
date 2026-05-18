@@ -5,7 +5,7 @@ date = 2024-08-09
 aliases = ["/towards-aws/data-governance-on-aws-using-datazone-ae88c5460c5d", "/posts/data-governance-on-aws-using-datazone"]
 
 [taxonomies]
-tags = ["aws", "datazone", "data-governance", "data-catalog", "glue", "lakeformation", "redshift", "athena"]
+tags = ["aws", "datazone", "data governance", "data catalog", "glue", "lakeformation", "redshift", "athena"]
 +++
 
 In this blog, we will provide a brief introduction to data governance and show how to implement it on AWS using DataZone. We will walk through a practical example involving a multi-account setup to manage and share data stored in S3 and Redshift, highlighting key steps and best practices along the way.

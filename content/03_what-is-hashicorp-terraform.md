@@ -5,7 +5,7 @@ date = 2023-09-22
 aliases = ["/what-is-hashicorp-terraform-42d419a61cb9", "posts/what-is-hashicorp-terraform"]
 
 [taxonomies]
-tags = ["terraform", "hashicorp", "iac", "infrastructure", "platform", "engineering"]
+tags = ["terraform", "hashicorp", "iac", "platform engineering"]
 +++
 
 In this blog I will explain what is Terraform and some of its common terms. I will also list some good to follow standards when you start using Terraform.

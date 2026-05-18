@@ -4,7 +4,7 @@ slug = "from_zero_to_fargate_running_containerized_apps_with_aurora_on_aws"
 date = 2026-03-04
 
 [taxonomies]
-tags = ["aws", "ecs", "fargate", "aurora", "serverlessv2", "postgresql", "mcaf", "terraform", "modules", "goalert", "infrastructure-as-code"]
+tags = ["aws", "ecs", "fargate", "aurora", "serverlessv2", "postgresql", "mcaf", "terraform", "modules", "goalert", "infrastructure as code"]
 +++
 
 My team needed a simple on-call scheduler to manage who's on call, handle escalations, and send alerts without building something custom. After evaluating options we landed on [GoAlert](https://goalert.me/), an open-source on-call scheduling and alerting platform that does exactly what we needed, without the SaaS price tag.

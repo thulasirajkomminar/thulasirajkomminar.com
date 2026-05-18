@@ -4,7 +4,7 @@ slug = "understanding-aws-lambda-event-source-mapping"
 date = 2024-12-26
 
 [taxonomies]
-tags = ["aws", "lambda", "serverless", "event-source", "event-source-mapping", "sqs", "kinesis", "re:Invent"]
+tags = ["aws", "lambda", "serverless", "event source mapping", "sqs", "kinesis", "re:Invent"]
 +++
 
 Attending AWS re:Invent is always a highlight for me, and this year’s session, <g>SVS407-R: Understanding AWS Lambda Event Source Mapping</g>, turned out to be a goldmine of insights. As someone who builds and maintains event-driven architectures, I walked away with a deeper understanding of the complexities and best practices around <g>Event Source Mapping (ESM)</g>, particularly in handling event streams from services like Amazon Kinesis, DynamoDB Streams, and Amazon SQS.
